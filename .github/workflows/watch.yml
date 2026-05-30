@@ -1,0 +1,51 @@
+name: ImmoCity watch
+
+on:
+  schedule:
+    # Every 15 minutes (cron is in UTC). GitHub may delay scheduled runs a few
+    # minutes during peak load — that's normal and fine for this use case.
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}   # adds a manual "Run workflow" button
+
+# Needed so the job can commit the updated seen.json back to the repo.
+permissions:
+  contents: write
+
+# Never let two runs overlap (they'd both try to push seen.json).
+concurrency:
+  group: immocity-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (gets the current seen.json memory)
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the bot
+        env:
+          # --- Search criteria (non-sensitive: edit freely here) ---
+          SEARCH_URL: 'https://www.immocity.com/index.php?contr=biens_liste&tri_lots=date&type_transaction=1&localisation=Maisons+Alfort+-+94700&hidden-localisation=Paris+-+75013%2CParis+-+75011%2CCharenton+Le+Pont+-+94220%2CParis+-+75012%2CParis+-+75010%2CParis+-+75014%2CMaisons+Alfort+-+94700&type_lot%5B%5D=appartement&surface=20&nb_piece=0&nb_chambre=0&budget_min=&budget_max=1000&page=0&vendus=0&submit_search_1='
+          # --- Telegram (from repo Secrets — never hard-code these) ---
+          TELEGRAM_ENABLED: "true"
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python immocity_bot.py
+
+      - name: Commit updated memory
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add seen.json
+          # Only commit if seen.json actually changed (i.e. new listings appeared).
+          git diff --quiet --cached || git commit -m "chore: update seen listings [skip ci]"
+          git push

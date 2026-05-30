@@ -1,0 +1,13 @@
+{
+  "search_url": "https://www.immocity.com/index.php?contr=biens_liste&tri_lots=date&type_transaction=1&localisation=Maisons+Alfort+-+94700&hidden-localisation=Paris+-+75013%2CParis+-+75011%2CCharenton+Le+Pont+-+94220%2CParis+-+75012%2CParis+-+75010%2CParis+-+75014%2CMaisons+Alfort+-+94700&type_lot%5B%5D=appartement&surface=20&nb_piece=0&nb_chambre=0&budget_min=&budget_max=1000&page=0&vendus=0&submit_search_1=",
+  "poll_minutes": 15,
+  "telegram_enabled": true,
+  "telegram_token": "PASTE_FROM_BOTFATHER",
+  "telegram_chat_id": "PASTE_YOUR_CHAT_ID",
+  "email_enabled": false,
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "email_user": "",
+  "email_pass": "",
+  "email_to": ""
+}

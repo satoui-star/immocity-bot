@@ -1,0 +1,15 @@
+# Local secrets — NEVER commit your real Telegram token / email password.
+# On GitHub Actions these come from repo Secrets instead.
+config.json
+
+# Old local SQLite (no longer used)
+listings.db
+
+# Python noise
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# NOTE: seen.json is intentionally NOT ignored — it is the bot's memory and
+# must be committed so the cloud runs remember what they've already sent.
