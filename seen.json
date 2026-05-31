@@ -214,5 +214,29 @@
     "score": 4.5,
     "commute": 4,
     "first_seen": "2026-05-31T13:56:23"
+  },
+  "foncia:331658514": {
+    "source": "foncia",
+    "ref": "331658514",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement/331658514.htm",
+    "price": 668,
+    "surface": 20,
+    "rooms": "1 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-05-31T12:50:07"
+  },
+  "foncia:28300-205": {
+    "source": "foncia",
+    "ref": "28300-205",
+    "url": "https://fr.foncia.com/location/paris-75013/appartement/28300-205.htm",
+    "price": 1000,
+    "surface": 33,
+    "rooms": "1 pièces",
+    "location": "75013",
+    "score": 4.4,
+    "commute": 24,
+    "first_seen": "2026-05-31T12:50:07"
   }
 }
