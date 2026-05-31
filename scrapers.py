@@ -29,7 +29,10 @@ HEADERS = {
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
     ),
+    "Accept": ("text/html,application/xhtml+xml,application/xml;q=0.9,"
+               "image/avif,image/webp,*/*;q=0.8"),
     "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+    "Upgrade-Insecure-Requests": "1",
 }
 TIMEOUT = 30
 
@@ -111,11 +114,18 @@ def scrape_foncia(cfg):
     for slug in cfg["foncia_zones"]:
         url = f"https://fr.foncia.com/location/{slug}"
         try:
-            soup = BeautifulSoup(_get(url), "html.parser")
+            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+            html = r.text
         except Exception as e:
             print(f"  [foncia:{slug}] fetch error: {e}")
             continue
+        soup = BeautifulSoup(html, "html.parser")
         cards = soup.select("app-annonce-card") or soup.select("div.foncia-card")
+        if not cards:
+            # Diagnostic: Foncia geo/bot-blocks some datacenter IPs and returns a
+            # challenge/empty page (HTTP 200 but no listing cards).
+            print(f"  [foncia:{slug}] 0 cards (status={r.status_code}, "
+                  f"bytes={len(html)}, has_datadome={'datadome' in html.lower()})")
         for card in cards:
             a = card.find("a", href=_FONCIA_REF_RE)
             if not a:
