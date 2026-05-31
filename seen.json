@@ -9,7 +9,7 @@
     "location": "75013",
     "score": 4.3,
     "commute": 24,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:04"
   },
   "immocity:12264": {
     "source": "immocity",
@@ -21,7 +21,7 @@
     "location": "75012",
     "score": 3.2,
     "commute": 15,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:05"
   },
   "foncia:331666745": {
     "source": "foncia",
@@ -33,7 +33,7 @@
     "location": "94700",
     "score": 7.6,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:07"
   },
   "foncia:331644931": {
     "source": "foncia",
@@ -45,7 +45,7 @@
     "location": "94700",
     "score": 7.5,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:28"
   },
   "foncia:331644936": {
     "source": "foncia",
@@ -57,7 +57,7 @@
     "location": "94700",
     "score": 7.4,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:49"
   },
   "foncia:331644934": {
     "source": "foncia",
@@ -69,7 +69,7 @@
     "location": "94700",
     "score": 7.7,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:50"
   },
   "foncia:331644943": {
     "source": "foncia",
@@ -81,7 +81,7 @@
     "location": "94700",
     "score": 4.5,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:51"
   },
   "foncia:331655357": {
     "source": "foncia",
@@ -93,7 +93,7 @@
     "location": "94700",
     "score": 4.5,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:52"
   },
   "foncia:331606823": {
     "source": "foncia",
@@ -105,7 +105,7 @@
     "location": "94700",
     "score": 4.5,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:53"
   },
   "foncia:29374-1118": {
     "source": "foncia",
@@ -117,7 +117,7 @@
     "location": "94700",
     "score": 4.5,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:54"
   },
   "foncia:331659808": {
     "source": "foncia",
@@ -129,7 +129,7 @@
     "location": "94220",
     "score": 5.7,
     "commute": 6,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:55"
   },
   "foncia:2277-212": {
     "source": "foncia",
@@ -141,7 +141,7 @@
     "location": "75013",
     "score": 5.5,
     "commute": 24,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:56"
   },
   "foncia:20142-671": {
     "source": "foncia",
@@ -153,7 +153,7 @@
     "location": "75013",
     "score": 2.1,
     "commute": 24,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:55:57"
   },
   "foncia:20142-315": {
     "source": "foncia",
@@ -165,7 +165,7 @@
     "location": "75013",
     "score": 2.5,
     "commute": 24,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:56:18"
   },
   "citya:GES00010012-478": {
     "source": "citya",
@@ -177,7 +177,7 @@
     "location": "94700",
     "score": 4.5,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:56:19"
   },
   "citya:GES30990041-478": {
     "source": "citya",
@@ -189,7 +189,7 @@
     "location": "94700",
     "score": 4.5,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:56:21"
   },
   "citya:GES53250038-478": {
     "source": "citya",
@@ -201,7 +201,7 @@
     "location": "94700",
     "score": 4.5,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:56:22"
   },
   "citya:GES01610001-478": {
     "source": "citya",
@@ -213,6 +213,6 @@
     "location": "94700",
     "score": 4.5,
     "commute": 4,
-    "first_seen": "2026-05-31T10:20:58"
+    "first_seen": "2026-05-31T13:56:23"
   }
 }

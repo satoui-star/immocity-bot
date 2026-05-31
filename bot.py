@@ -239,11 +239,18 @@ def fmt(listing, score, commute, eur_m2):
 
 
 def notify_telegram(cfg, text):
-    r = requests.post(
-        f"https://api.telegram.org/bot{cfg['telegram_token']}/sendMessage",
-        data={"chat_id": cfg["telegram_chat_id"], "text": text},
-        timeout=20,
-    )
+    url = f"https://api.telegram.org/bot{cfg['telegram_token']}/sendMessage"
+    data = {"chat_id": cfg["telegram_chat_id"], "text": text}
+    # Telegram throttles bots (~1 msg/sec to a chat). On 429 it tells us how
+    # long to wait via retry_after — honour it and retry instead of dropping.
+    for _ in range(4):
+        r = requests.post(url, data=data, timeout=20)
+        if r.status_code == 429:
+            wait = r.json().get("parameters", {}).get("retry_after", 2)
+            time.sleep(wait + 1)
+            continue
+        r.raise_for_status()
+        return
     r.raise_for_status()
 
 
@@ -302,6 +309,7 @@ def cycle(cfg, seed=False):
         if not seed:
             push(cfg, fmt(L, score, commute, eur_m2))
             new_alerts += 1
+            time.sleep(0.5)   # stay comfortably under Telegram's rate limit
     save_seen(seen)
 
     if seed:
