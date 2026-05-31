@@ -1,18 +1,218 @@
 {
-  "13732": {
+  "immocity:13732": {
+    "source": "immocity",
+    "ref": "13732",
     "url": "https://www.immocity.com/gera4518-location-appartement-2-pieces-paris-75013/appartement-13732.html",
     "price": 982,
     "surface": 32,
     "rooms": "2 pièces",
     "location": "75013",
-    "first_seen": "2026-05-30T21:37:29"
+    "score": 4.3,
+    "commute": 24,
+    "first_seen": "2026-05-31T10:20:58"
   },
-  "12264": {
+  "immocity:12264": {
+    "source": "immocity",
+    "ref": "12264",
     "url": "https://www.immocity.com/gera4064-location-appartement-1-piece-paris-75012/appartement-12264.html",
     "price": 887,
-    "surface": 15,
+    "surface": 23,
     "rooms": "1 pièces",
     "location": "75012",
-    "first_seen": "2026-05-30T21:37:29"
+    "score": 3.2,
+    "commute": 15,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:331666745": {
+    "source": "foncia",
+    "ref": "331666745",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement/331666745.htm",
+    "price": 833,
+    "surface": 42,
+    "rooms": "2 pièces",
+    "location": "94700",
+    "score": 7.6,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:331644931": {
+    "source": "foncia",
+    "ref": "331644931",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement/331644931.htm",
+    "price": 953,
+    "surface": 48,
+    "rooms": "3 pièces",
+    "location": "94700",
+    "score": 7.5,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:331644936": {
+    "source": "foncia",
+    "ref": "331644936",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement/331644936.htm",
+    "price": 951,
+    "surface": 47,
+    "rooms": "2 pièces",
+    "location": "94700",
+    "score": 7.4,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:331644934": {
+    "source": "foncia",
+    "ref": "331644934",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement/331644934.htm",
+    "price": 857,
+    "surface": 44,
+    "rooms": "2 pièces",
+    "location": "94700",
+    "score": 7.7,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:331644943": {
+    "source": "foncia",
+    "ref": "331644943",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement/331644943.htm",
+    "price": 970,
+    "surface": 30,
+    "rooms": "2 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:331655357": {
+    "source": "foncia",
+    "ref": "331655357",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement-meuble/331655357.htm",
+    "price": 950,
+    "surface": 33,
+    "rooms": "2 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:331606823": {
+    "source": "foncia",
+    "ref": "331606823",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement/331606823.htm",
+    "price": 865,
+    "surface": 32,
+    "rooms": "2 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:29374-1118": {
+    "source": "foncia",
+    "ref": "29374-1118",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement/29374-1118.htm",
+    "price": 830,
+    "surface": 31,
+    "rooms": null,
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:331659808": {
+    "source": "foncia",
+    "ref": "331659808",
+    "url": "https://fr.foncia.com/location/charenton-le-pont-94220/appartement/331659808.htm",
+    "price": 847,
+    "surface": 32,
+    "rooms": "2 pièces",
+    "location": "94220",
+    "score": 5.7,
+    "commute": 6,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:2277-212": {
+    "source": "foncia",
+    "ref": "2277-212",
+    "url": "https://fr.foncia.com/location/paris-75013/appartement/2277-212.htm",
+    "price": 837,
+    "surface": 31,
+    "rooms": null,
+    "location": "75013",
+    "score": 5.5,
+    "commute": 24,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:20142-671": {
+    "source": "foncia",
+    "ref": "20142-671",
+    "url": "https://fr.foncia.com/location/paris-75013/appartement/20142-671.htm",
+    "price": 970,
+    "surface": 26,
+    "rooms": null,
+    "location": "75013",
+    "score": 2.1,
+    "commute": 24,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "foncia:20142-315": {
+    "source": "foncia",
+    "ref": "20142-315",
+    "url": "https://fr.foncia.com/location/paris-75013/appartement/20142-315.htm",
+    "price": 938,
+    "surface": 26,
+    "rooms": null,
+    "location": "75013",
+    "score": 2.5,
+    "commute": 24,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "citya:GES00010012-478": {
+    "source": "citya",
+    "ref": "GES00010012-478",
+    "url": "https://www.citya.com/annonces/location/appartement/maisons-alfort-94700/GES00010012-478",
+    "price": 880,
+    "surface": 30,
+    "rooms": "2 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "citya:GES30990041-478": {
+    "source": "citya",
+    "ref": "GES30990041-478",
+    "url": "https://www.citya.com/annonces/location/appartement/maisons-alfort-94700/GES30990041-478",
+    "price": 900,
+    "surface": 29,
+    "rooms": "1 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "citya:GES53250038-478": {
+    "source": "citya",
+    "ref": "GES53250038-478",
+    "url": "https://www.citya.com/annonces/location/appartement/maisons-alfort-94700/GES53250038-478",
+    "price": 900,
+    "surface": 27,
+    "rooms": "1 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
+  },
+  "citya:GES01610001-478": {
+    "source": "citya",
+    "ref": "GES01610001-478",
+    "url": "https://www.citya.com/annonces/location/appartement/maisons-alfort-94700/GES01610001-478",
+    "price": 810,
+    "surface": 26,
+    "rooms": "1 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-05-31T10:20:58"
   }
 }

@@ -1,11 +1,23 @@
-# ImmoCity Rental Watch Bot
+# Rental Watch Bot — ImmoCity + Foncia + Citya
 
-Polls your ImmoCity search URL and pings you (Telegram and/or email) the moment
-a **new** apartment is published. De-duplicates by the listing's property ID, so
-you're notified exactly once per apartment.
+Polls **three** rental sites (ImmoCity, Foncia, Citya) on a schedule and pings
+you (Telegram and/or email) the moment a **new** apartment matching your
+criteria is published. De-duplicates by each site's stable property ID, so you
+are notified exactly once per apartment.
 
-Already tested against the live site — it correctly parses price, surface,
-rooms, and location for each listing.
+Every listing is **scored 0–10** on two things:
+- **Value** — its €/m² versus the typical rent for that zone
+- **Commute** — estimated métro time to **École Vétérinaire de Maisons-Alfort**
+  (line 8)
+
+Listings are filtered by **budget** (≤ 1000 €), **surface** (≥ 20 m²) and a hard
+**commute cap** (≤ 40 min). Set `min_score` (e.g. `6.0`) to only hear about the
+best deals.
+
+> All three scrapers are tested against the live sites. Known traps are handled:
+> Foncia decimal-cents prices (`953,72 €`) and gallery photo-count badges,
+> Citya "annonces similaires" from other cities, and parking-boxes filed under
+> "appartement" (filtered out because they have no surface).
 
 ---
 
@@ -33,10 +45,10 @@ python -m pip install -r requirements.txt
 4. Test it:
 
 ```powershell
-python immocity_bot.py --test
+python bot.py --test
 ```
 
-You should receive "✅ Test ImmoCity bot — les notifications fonctionnent !"
+You should receive "✅ Test — le bot location (ImmoCity + Foncia + Citya) fonctionne !"
 
 ### (Optional) Email alerts instead of / in addition to Telegram
 In `config.json` set `"email_enabled": true` and fill `email_user`,
@@ -46,31 +58,42 @@ myaccount.google.com → Security → App passwords), and `email_to`.
 ## 3. Seed once (so you aren't spammed by existing listings)
 
 ```powershell
-python immocity_bot.py --seed
+python bot.py --seed
 ```
 
-This records every current listing **without** notifying. From now on you'll
-only be alerted about genuinely new ones.
+This records every current matching listing **without** notifying. From now on
+you'll only be alerted about genuinely new ones.
 
 ## 4. Run it
 
 **Option A — leave it running in a terminal:**
 ```powershell
-python immocity_bot.py --loop
+python bot.py --loop
 ```
 Polls every `poll_minutes` (default 15). Ctrl+C to stop.
 
-**Option B — Windows Task Scheduler (survives reboots, recommended):**
+**Option B — Windows Task Scheduler (survives reboots):**
 1. Open **Task Scheduler** → *Create Task*.
 2. **Trigger:** *On a schedule* → *Repeat task every 15 minutes* → *indefinitely*.
 3. **Action:** *Start a program*
    - Program/script: `python`
-   - Arguments: `immocity_bot.py`
+   - Arguments: `bot.py`
    - Start in: `C:\Users\SoumayaATAOUI\Downloads\immocity-bot`
 4. Check *Run whether user is logged on or not*. Done.
 
-Each run does a single polite page fetch, compares against `seen.json`, and
-notifies only on new entries.
+> The recommended setup is **GitHub Actions** (next section) — no laptop needed.
+
+Each run fetches each site's search pages, scores + filters the results,
+compares against `seen.json`, and notifies only on new matches.
+
+## Tuning the search
+
+Everything lives in `config.json` (local) or `bot.py` `DEFAULT_CONFIG` (used by
+the cloud run):
+- `budget_max`, `surface_min`, `max_commute_min`, `min_score` — the filters
+- `foncia_zones` / `citya_zones` — the town slugs to crawl (add/remove zones)
+- `immocity_url` — paste a fresh ImmoCity search URL anytime
+- `COMMUTE_MIN` (top of `bot.py`) — métro minutes per postal code, edit to taste
 
 ---
 
@@ -126,8 +149,10 @@ That's it. From now on it runs **every 15 minutes** automatically and Telegrams
 you the instant a new apartment appears.
 
 ### Changing your search later
-Edit `SEARCH_URL` inside `.github/workflows/watch.yml` (paste a new ImmoCity
-search URL), commit, and push. No other changes needed.
+Edit the zones / filters in `bot.py` `DEFAULT_CONFIG` (`foncia_zones`,
+`citya_zones`, `immocity_url`, `budget_max`, `min_score`…), commit, and push.
+You can also override `BUDGET_MAX` / `MIN_SCORE` via the `env:` block in
+`.github/workflows/watch.yml` without touching the code.
 
 ### Notes
 - Scheduled runs can be delayed a few minutes at GitHub's peak times — normal.
@@ -142,7 +167,8 @@ search URL), commit, and push. No other changes needed.
 ## Files
 | File | Purpose |
 |------|---------|
-| `immocity_bot.py` | the bot |
+| `bot.py` | the core: config, commute scoring, filtering, notifications, CLI |
+| `scrapers.py` | the three site scrapers (ImmoCity, Foncia, Citya) |
 | `.github/workflows/watch.yml` | the cloud schedule (GitHub Actions) |
 | `config.json` | LOCAL settings only — git-ignored, never pushed |
 | `config.example.json` | template to copy from |
@@ -150,7 +176,7 @@ search URL), commit, and push. No other changes needed.
 | `requirements.txt` | Python dependencies |
 
 ## Notes / etiquette
-- Personal-use monitoring: one fetch per cycle, real browser User-Agent, 15-min
-  default interval. Don't drop the interval below a few minutes.
-- If ImmoCity changes its HTML, the parser may need a tweak — the `REF_RE` /
-  `PRICE_RE` regexes at the top of the script are the place to look.
+- Personal-use monitoring: a handful of polite fetches per cycle, real browser
+  User-Agent, 15-min default interval. Don't drop the interval below a few minutes.
+- If a site changes its HTML, the parser may need a tweak — each scraper and its
+  regexes live in `scrapers.py`, clearly separated per site.
