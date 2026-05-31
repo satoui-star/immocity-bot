@@ -20,6 +20,7 @@ requests + BeautifulSoup is enough — no headless browser needed.
 """
 
 import re
+import time
 import requests
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
@@ -101,53 +102,72 @@ def scrape_immocity(cfg):
 
 
 # ========================================================================= #
-#  FONCIA  — one page per zone, listings live in <app-annonce-card>          #
+#  FONCIA  — uses the Angular app's JSON backend API.                         #
+#  The public website (fr.foncia.com) WAF-blocks datacenter IPs with a 403,  #
+#  but the data API on a separate host returns clean structured JSON and is   #
+#  reachable from the cloud. We query it directly, one POST per zone.         #
 # ========================================================================= #
-_FONCIA_REF_RE = re.compile(r"/appartement(?:-meuble)?/(\d+(?:-\d+)?)\.htm", re.IGNORECASE)
-# Foncia rent is shown as "833 € / mois CC" — anchor to "/ mois" so we never
-# pick up the gallery photo-count badge ("x4"), charges or honoraires figures.
-_FONCIA_PRICE_RE = re.compile(r"(\d[\d\s  ]{1,9}?)(?:[.,]\d{1,2})?\s*€\s*/?\s*mois", re.IGNORECASE)
+_FONCIA_API = "https://fnc-api.prod.fonciatech.net/annonces/annonces/search"
+_FONCIA_API_HEADERS = {
+    "User-Agent": HEADERS["User-Agent"],
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+    "Accept-Language": "fr-FR,fr;q=0.9",
+    "Origin": "https://fr.foncia.com",
+    "Referer": "https://fr.foncia.com/",
+}
+_FONCIA_POSTAL_RE = re.compile(r"-(\d{5})/")
+
+
+def _foncia_post(slug):
+    """POST the search API for one locality slug, with a small retry."""
+    payload = {
+        "type": "location",
+        "filters": {"localities": {"slugs": [slug]}},
+        "expandNearby": False,   # stay strictly in the requested zone
+        "size": 50,
+    }
+    last = None
+    for attempt in range(3):
+        try:
+            r = requests.post(_FONCIA_API, headers=_FONCIA_API_HEADERS,
+                              json=payload, timeout=TIMEOUT)
+            r.raise_for_status()
+            return r.json()
+        except Exception as e:                       # transient network / 5xx
+            last = e
+            time.sleep(2 * (attempt + 1))
+    raise last
 
 
 def scrape_foncia(cfg):
     out, seen_ref = [], set()
     for slug in cfg["foncia_zones"]:
-        url = f"https://fr.foncia.com/location/{slug}"
         try:
-            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-            html = r.text
+            data = _foncia_post(slug)
         except Exception as e:
-            print(f"  [foncia:{slug}] fetch error: {e}")
+            print(f"  [foncia:{slug}] api error: {e}")
             continue
-        soup = BeautifulSoup(html, "html.parser")
-        cards = soup.select("app-annonce-card") or soup.select("div.foncia-card")
-        if not cards:
-            # Diagnostic: Foncia geo/bot-blocks some datacenter IPs and returns a
-            # challenge/empty page (HTTP 200 but no listing cards).
-            print(f"  [foncia:{slug}] 0 cards (status={r.status_code}, "
-                  f"bytes={len(html)}, has_datadome={'datadome' in html.lower()})")
-        for card in cards:
-            a = card.find("a", href=_FONCIA_REF_RE)
-            if not a:
+        for a in data.get("annonces", []):
+            if "appartement" not in (a.get("typeBien") or "").lower():
                 continue
-            href = a["href"]                      # capture BEFORE decomposing
-            m = _FONCIA_REF_RE.search(href)
-            ref = m.group(1)
-            if ref in seen_ref:
+            ref = str(a.get("reference") or "")
+            if not ref or ref in seen_ref:
                 continue
             seen_ref.add(ref)
-            # Drop gallery / image badges (they carry the "x4" photo count that
-            # would otherwise glue onto the price). The detail <a> lives inside
-            # the gallery, hence capturing href first.
-            for junk in card.select(".gallery, .gallery-container, img, picture"):
-                junk.decompose()
-            text = " ".join(card.get_text(" ", strip=True).split())
-            f = extract_fields(text, href)
-            pm = _FONCIA_PRICE_RE.search(text)   # prefer the "/ mois" price
-            if pm:
-                f["price"] = _digits(pm.group(1))
-            out.append({"source": "foncia", "ref": ref,
-                        "url": urljoin("https://fr.foncia.com", href), **f})
+            canon = a.get("canonicalUrl") or ""
+            surf = a.get("surface") or {}
+            loyer = a.get("loyer")
+            pm = _FONCIA_POSTAL_RE.search(canon)
+            out.append({
+                "source": "foncia",
+                "ref": ref,
+                "url": urljoin("https://fr.foncia.com", canon),
+                "price": int(round(loyer)) if isinstance(loyer, (int, float)) else None,
+                "surface": int(round(surf["habitable"])) if surf.get("habitable") else None,
+                "rooms": (f"{a['nbPiece']} pièces" if a.get("nbPiece") else None),
+                "location": pm.group(1) if pm else None,
+            })
     return out
 
 
