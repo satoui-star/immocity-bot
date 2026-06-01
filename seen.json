@@ -250,5 +250,17 @@
     "score": 4.9,
     "commute": 4,
     "first_seen": "2026-06-01T13:12:53"
+  },
+  "citya:GES10871036-895": {
+    "source": "citya",
+    "ref": "GES10871036-895",
+    "url": "https://www.citya.com/annonces/location/appartement/maisons-alfort-94700/GES10871036-895",
+    "price": 769,
+    "surface": 21,
+    "rooms": "1 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-06-01T16:30:54"
   }
 }
