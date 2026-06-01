@@ -226,5 +226,17 @@
     "score": 4.4,
     "commute": 24,
     "first_seen": "2026-05-31T12:50:07"
+  },
+  "immocity:13732": {
+    "source": "immocity",
+    "ref": "13732",
+    "url": "https://www.immocity.com/gera4518-location-appartement-2-pieces-paris-75013/appartement-13732.html",
+    "price": 982,
+    "surface": 32,
+    "rooms": "2 pièces",
+    "location": "75013",
+    "score": 4.3,
+    "commute": 24,
+    "first_seen": "2026-06-01T09:29:38"
   }
 }
