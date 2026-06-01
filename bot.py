@@ -68,7 +68,7 @@ DEFAULT_MEDIAN = 30
 #  CONFIG                                                                       #
 # --------------------------------------------------------------------------- #
 DEFAULT_CONFIG = {
-    "sources": ["immocity", "foncia", "citya"],
+    "sources": ["immocity", "foncia", "citya", "flatbay"],
 
     "immocity_url": (
         "https://www.immocity.com/index.php?contr=biens_liste&tri_lots=date"
@@ -88,6 +88,9 @@ DEFAULT_CONFIG = {
         "paris-12e-arrondissement-75012", "paris-13e-arrondissement-75013",
         "paris-14e-arrondissement-75014",
     ],
+    # Flatbay (Altarea) filters by free-text city; we keep only target postals.
+    "flatbay_zones": ["Maisons-Alfort", "Charenton-le-Pont", "Paris"],
+    "flatbay_postals": ["94700", "94220", "75010", "75011", "75012", "75013", "75014"],
 
     # --- filters (same params as the ImmoCity search) ---
     "budget_max": 1000,        # €/month, inclusive

@@ -41,7 +41,7 @@ TIMEOUT = 30
 # Thousands separators on FR sites: regular space, NBSP ( ), narrow NBSP
 # ( ). Price is always the number immediately before the € sign.
 _PRICE_RE = re.compile(r"(\d[\d\s  ]{0,9}?)(?:[.,]\d{1,2})?\s*€")
-_SURFACE_RE = re.compile(r"(\d{1,4})(?:[.,]\d+)?\s*m[²2]", re.IGNORECASE)
+_SURFACE_RE = re.compile(r"(\d{1,4})(?:[.,]\d+)?\s*m\s*[²2]", re.IGNORECASE)
 _ROOMS_RE = re.compile(r"(\d+)\s*pi[eè]ces?", re.IGNORECASE)
 _POSTAL_RE = re.compile(r"\b(\d{5})\b")
 
@@ -207,10 +207,64 @@ def scrape_citya(cfg):
     return out
 
 
+# ========================================================================= #
+#  FLATBAY (Altarea Gestion Immobilière) — server-rendered search.           #
+#  Filtering is via GET query params; each listing card is an                #
+#  <a class="listing-item"> linking to /fr/property/show/<id>.               #
+#  The free-text `search` box filters by city, so we query one city at a     #
+#  time and keep only results whose postal is in our target zones.           #
+# ========================================================================= #
+_FLATBAY_BASE = "https://altarea.flatbay.fr"
+_FLATBAY_REF_RE = re.compile(r"/fr/property/show/(\d+)")
+_FLATBAY_ROOMS_RE = re.compile(r"(\d+)\s*p\.")
+
+
+def scrape_flatbay(cfg):
+    out, seen_ref = [], set()
+    allowed = set(cfg.get("flatbay_postals", []))
+    for city in cfg.get("flatbay_zones", []):
+        params = {
+            "rentsellType": "property.rentsellType.rent",
+            "type": "property.type.appart",
+            "search": city,
+            "maxloyer": cfg["budget_max"],
+            "minsurface": cfg["surface_min"],
+        }
+        try:
+            r = requests.get(f"{_FLATBAY_BASE}/fr/search", headers=HEADERS,
+                             params=params, timeout=TIMEOUT)
+            r.raise_for_status()
+            soup = BeautifulSoup(r.text, "html.parser")
+        except Exception as e:
+            print(f"  [flatbay:{city}] fetch error: {e}")
+            continue
+        for a in soup.select("a.listing-item[href]"):
+            m = _FLATBAY_REF_RE.search(a["href"])
+            if not m:
+                continue
+            ref = m.group(1)
+            if ref in seen_ref:
+                continue
+            text = " ".join(a.get_text(" ", strip=True).split())
+            f = extract_fields(text, a["href"])
+            # `search` can return neighbouring towns — keep only target postals.
+            if allowed and f["location"] not in allowed:
+                continue
+            seen_ref.add(ref)
+            if not f["rooms"]:
+                rm = _FLATBAY_ROOMS_RE.search(text)   # Flatbay shows "2 p."
+                if rm:
+                    f["rooms"] = rm.group(1) + " pièces"
+            out.append({"source": "flatbay", "ref": ref,
+                        "url": urljoin(_FLATBAY_BASE, a["href"]), **f})
+    return out
+
+
 SCRAPERS = {
     "immocity": scrape_immocity,
     "foncia": scrape_foncia,
     "citya": scrape_citya,
+    "flatbay": scrape_flatbay,
 }
 
 
