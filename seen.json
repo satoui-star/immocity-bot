@@ -238,5 +238,17 @@
     "score": 4.3,
     "commute": 24,
     "first_seen": "2026-06-01T09:29:38"
+  },
+  "flatbay:8504": {
+    "source": "flatbay",
+    "ref": "8504",
+    "url": "https://altarea.flatbay.fr/fr/property/show/8504",
+    "price": 837,
+    "surface": 33,
+    "rooms": "1 pièces",
+    "location": "94700",
+    "score": 4.9,
+    "commute": 4,
+    "first_seen": "2026-06-01T13:12:53"
   }
 }
