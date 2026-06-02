@@ -1,4 +1,4 @@
-# Rental Watch Bot — ImmoCity + Foncia + Citya
+# Rental Watch Bot — ImmoCity + Foncia + Citya test
 
 Polls **three** rental sites (ImmoCity, Foncia, Citya) on a schedule and pings
 you (Telegram and/or email) the moment a **new** apartment matching your
