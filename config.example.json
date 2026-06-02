@@ -5,16 +5,18 @@
 
   "foncia_zones": [
     "maisons-alfort-94700", "charenton-le-pont-94220",
-    "paris-75010", "paris-75011", "paris-75012", "paris-75013", "paris-75014"
+    "paris-75010", "paris-75011", "paris-75012", "paris-75013", "paris-75014","paris-75014","paris-75007","paris-75008","paris-75009","paris-75015","paris-75016","paris-75017","paris-75018"
   ],
   "citya_zones": [
     "maisons-alfort-94700", "charenton-le-pont-94220",
     "paris-10e-arrondissement-75010", "paris-11e-arrondissement-75011",
     "paris-12e-arrondissement-75012", "paris-13e-arrondissement-75013",
-    "paris-14e-arrondissement-75014"
+    "paris-14e-arrondissement-75014","paris-09e-arrondissement-75009",
+    "paris-15e-arrondissement-75015","paris-16e-arrondissement-75016",
+    "paris-17e-arrondissement-75017","paris-18e-arrondissement-75018","paris-08e-arrondissement-75008"
   ],
   "flatbay_zones": ["Maisons-Alfort", "Charenton-le-Pont", "Paris"],
-  "flatbay_postals": ["94700", "94220", "75010", "75011", "75012", "75013", "75014"],
+  "flatbay_postals": ["94700", "94220", "75010", "75011", "75012", "75013", "75014", "75008", "75009", "75015", "75016", "75017", "75018"],
 
   "budget_max": 1000,
   "surface_min": 20,
