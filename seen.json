@@ -394,5 +394,17 @@
     "score": 1.2,
     "commute": 30,
     "first_seen": "2026-06-03T14:46:02"
+  },
+  "citya:GES25790012-943": {
+    "source": "citya",
+    "ref": "GES25790012-943",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-14e-arrondissement-75014/GES25790012-943",
+    "price": 990,
+    "surface": 25,
+    "rooms": "2 pièces",
+    "location": "75014",
+    "score": 1.2,
+    "commute": 30,
+    "first_seen": "2026-06-03T16:31:02"
   }
 }
