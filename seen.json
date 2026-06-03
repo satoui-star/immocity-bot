@@ -262,5 +262,29 @@
     "score": 4.5,
     "commute": 4,
     "first_seen": "2026-06-01T16:30:54"
+  },
+  "citya:GES02540100-478": {
+    "source": "citya",
+    "ref": "GES02540100-478",
+    "url": "https://www.citya.com/annonces/location/appartement/maisons-alfort-94700/GES02540100-478",
+    "price": 846,
+    "surface": 30,
+    "rooms": "1 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-06-02T16:31:03"
+  },
+  "citya:GES39260015-182": {
+    "source": "citya",
+    "ref": "GES39260015-182",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-14e-arrondissement-75014/GES39260015-182",
+    "price": 947,
+    "surface": 28,
+    "rooms": "2 pièces",
+    "location": "75014",
+    "score": 2.8,
+    "commute": 30,
+    "first_seen": "2026-06-02T18:15:52"
   }
 }
