@@ -55,12 +55,21 @@ COMMUTE_MIN = {
     "75013": 24,   # Paris 13e — needs one change
     "75010": 26,   # Paris 10e — line 8 far end
     "75014": 30,   # Paris 14e — needs a change, south side
+    "75015": 28,   # Paris 15e — line 8 Lourmel/Commerce, ~8 stops
+    "75007": 30,   # Paris 7e — line 8 La Motte-Picquet, ~10 stops
+    "75009": 33,   # Paris 9e — line 8 via Opéra/Grands Boulevards
+    "75017": 38,   # Paris 17e — line 13 or 3 then change to 8
+    "75008": 35,   # Paris 8e — line 8 from Opéra, ~12 stops
+    "75018": 40,   # Paris 18e — line 4 or 12 then change
+    "75016": 45,   # Paris 16e — no direct line 8, multiple changes
 }
 
 # Indicative rental €/m²/month per zone, for the "good value" half of the score.
 MEDIAN_EUR_M2 = {
     "94700": 21, "94220": 24, "94160": 27,
     "75010": 33, "75011": 33, "75012": 31, "75013": 30, "75014": 31,
+    "75015": 32, "75007": 42, "75009": 38, "75017": 34,
+    "75008": 43, "75018": 30, "75016": 38,
 }
 DEFAULT_MEDIAN = 30
 
@@ -73,24 +82,36 @@ DEFAULT_CONFIG = {
     "immocity_url": (
         "https://www.immocity.com/index.php?contr=biens_liste&tri_lots=date"
         "&type_transaction=1&localisation=Maisons+Alfort+-+94700"
-        "&hidden-localisation=Paris+-+75013%2CParis+-+75011%2CCharenton+Le+Pont+-+94220"
-        "%2CParis+-+75012%2CParis+-+75010%2CParis+-+75014%2CMaisons+Alfort+-+94700"
+        "&hidden-localisation="
+        "Paris+-+75007%2CParis+-+75008%2CParis+-+75009%2CParis+-+75010"
+        "%2CParis+-+75011%2CParis+-+75012%2CParis+-+75013%2CParis+-+75014"
+        "%2CParis+-+75015%2CParis+-+75016%2CParis+-+75017%2CParis+-+75018"
+        "%2CCharenton+Le+Pont+-+94220%2CMaisons+Alfort+-+94700"
         "&type_lot%5B%5D=appartement&surface=20&nb_piece=0&nb_chambre=0"
         "&budget_min=&budget_max=1000&page=0&vendus=0&submit_search_1="
     ),
     "foncia_zones": [
         "maisons-alfort-94700", "charenton-le-pont-94220",
-        "paris-75010", "paris-75011", "paris-75012", "paris-75013", "paris-75014",
+        "paris-75007", "paris-75008", "paris-75009", "paris-75010",
+        "paris-75011", "paris-75012", "paris-75013", "paris-75014",
+        "paris-75015", "paris-75016", "paris-75017", "paris-75018",
     ],
     "citya_zones": [
         "maisons-alfort-94700", "charenton-le-pont-94220",
+        "paris-08e-arrondissement-75008", "paris-09e-arrondissement-75009",
         "paris-10e-arrondissement-75010", "paris-11e-arrondissement-75011",
         "paris-12e-arrondissement-75012", "paris-13e-arrondissement-75013",
-        "paris-14e-arrondissement-75014",
+        "paris-14e-arrondissement-75014", "paris-15e-arrondissement-75015",
+        "paris-16e-arrondissement-75016", "paris-17e-arrondissement-75017",
+        "paris-18e-arrondissement-75018",
     ],
     # Flatbay (Altarea) filters by free-text city; we keep only target postals.
     "flatbay_zones": ["Maisons-Alfort", "Charenton-le-Pont", "Paris"],
-    "flatbay_postals": ["94700", "94220", "75010", "75011", "75012", "75013", "75014"],
+    "flatbay_postals": [
+        "94700", "94220",
+        "75008", "75009", "75010", "75011", "75012", "75013",
+        "75014", "75015", "75016", "75017", "75018",
+    ],
 
     # --- filters (same params as the ImmoCity search) ---
     "budget_max": 1000,        # €/month, inclusive
