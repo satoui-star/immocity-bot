@@ -406,5 +406,17 @@
     "score": 1.2,
     "commute": 30,
     "first_seen": "2026-06-03T16:31:02"
+  },
+  "citya:GES11130016-208": {
+    "source": "citya",
+    "ref": "GES11130016-208",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-12e-arrondissement-75012/GES11130016-208",
+    "price": 923,
+    "surface": 23,
+    "rooms": "1 pièces",
+    "location": "75012",
+    "score": 3.1,
+    "commute": 15,
+    "first_seen": "2026-06-03T18:31:07"
   }
 }
