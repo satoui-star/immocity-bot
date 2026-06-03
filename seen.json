@@ -286,5 +286,101 @@
     "score": 2.8,
     "commute": 30,
     "first_seen": "2026-06-02T18:15:52"
+  },
+  "immocity:12267": {
+    "source": "immocity",
+    "ref": "12267",
+    "url": "https://www.immocity.com/gera4067-location-appartement-1-piece-paris-75018/appartement-12267.html",
+    "price": 907,
+    "surface": 26,
+    "rooms": "1 pièces",
+    "location": "75018",
+    "score": 0.9,
+    "commute": 40,
+    "first_seen": "2026-06-03T09:15:55"
+  },
+  "immocity:12333": {
+    "source": "immocity",
+    "ref": "12333",
+    "url": "https://www.immocity.com/couc165-location-appartement-1-piece-paris-75018/appartement-12333.html",
+    "price": 704,
+    "surface": 22,
+    "rooms": "1 pièces",
+    "location": "75018",
+    "score": 1.8,
+    "commute": 40,
+    "first_seen": "2026-06-03T09:15:56"
+  },
+  "immocity:13726": {
+    "source": "immocity",
+    "ref": "13726",
+    "url": "https://www.immocity.com/city3220-location-appartement-2-pieces-paris-75015/appartement-13726.html",
+    "price": 998,
+    "surface": 30,
+    "rooms": "2 pièces",
+    "location": "75015",
+    "score": 3.6,
+    "commute": 28,
+    "first_seen": "2026-06-03T09:15:57"
+  },
+  "immocity:9426": {
+    "source": "immocity",
+    "ref": "9426",
+    "url": "https://www.immocity.com/gerl49-location-appartement-1-piece-paris-75018/appartement-9426.html",
+    "price": 772,
+    "surface": 25,
+    "rooms": "1 pièces",
+    "location": "75018",
+    "score": 2.2,
+    "commute": 40,
+    "first_seen": "2026-06-03T09:15:58"
+  },
+  "immocity:13652": {
+    "source": "immocity",
+    "ref": "13652",
+    "url": "https://www.immocity.com/gerl450-location-appartement-2-pieces-paris-75017/appartement-13652.html",
+    "price": 990,
+    "surface": 29,
+    "rooms": "2 pièces",
+    "location": "75017",
+    "score": 2.7,
+    "commute": 38,
+    "first_seen": "2026-06-03T09:15:59"
+  },
+  "foncia:331674778": {
+    "source": "foncia",
+    "ref": "331674778",
+    "url": "https://fr.foncia.com/location/paris-75007/appartement/331674778.htm",
+    "price": 861,
+    "surface": 20,
+    "rooms": "1 pièces",
+    "location": "75007",
+    "score": 3.5,
+    "commute": 30,
+    "first_seen": "2026-06-03T09:16:00"
+  },
+  "citya:GES36430526-182": {
+    "source": "citya",
+    "ref": "GES36430526-182",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-18e-arrondissement-75018/GES36430526-182",
+    "price": 691,
+    "surface": 24,
+    "rooms": "1 pièces",
+    "location": "75018",
+    "score": 2.9,
+    "commute": 40,
+    "first_seen": "2026-06-03T09:16:01"
+  },
+  "flatbay:9783": {
+    "source": "flatbay",
+    "ref": "9783",
+    "url": "https://altarea.flatbay.fr/fr/property/show/9783",
+    "price": 953,
+    "surface": 29,
+    "rooms": "2 pièces",
+    "location": "75017",
+    "score": 3.1,
+    "commute": 38,
+    "first_seen": "2026-06-03T09:16:01"
   }
 }
