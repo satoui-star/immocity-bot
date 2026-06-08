@@ -418,5 +418,17 @@
     "score": 3.1,
     "commute": 15,
     "first_seen": "2026-06-03T18:31:07"
+  },
+  "immocity:13789": {
+    "source": "immocity",
+    "ref": "13789",
+    "url": "https://www.immocity.com/city3239-location-appartement-2-pieces-paris-11-75011/appartement-13789.html",
+    "price": 750,
+    "surface": 35,
+    "rooms": "2 pièces",
+    "location": "75011",
+    "score": 7.6,
+    "commute": 19,
+    "first_seen": "2026-06-08T08:07:41"
   }
 }
