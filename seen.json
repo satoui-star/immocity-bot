@@ -802,5 +802,17 @@
     "score": 1.2,
     "commute": 32,
     "first_seen": "2026-06-11T21:22:28"
+  },
+  "citya:GES10640015-208": {
+    "source": "citya",
+    "ref": "GES10640015-208",
+    "url": "https://www.citya.com/annonces/location/appartement/vincennes-94300/GES10640015-208",
+    "price": 850,
+    "surface": 22,
+    "rooms": "1 pièces",
+    "location": "94300",
+    "score": 2.5,
+    "commute": 20,
+    "first_seen": "2026-06-11T21:54:03"
   }
 }
