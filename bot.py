@@ -47,29 +47,47 @@ CONFIG_PATH = os.path.join(HERE, "config.json")
 #  (line 8 terminus-side). Rough door-to-door metro estimates by postal code.  #
 # --------------------------------------------------------------------------- #
 COMMUTE_MIN = {
-    "94700": 4,    # Maisons-Alfort — on line 8, basically there
-    "94160": 6,    # Saint-Mandé (if added)
-    "94220": 6,    # Charenton-le-Pont — 1–2 stops on line 8
-    "75012": 15,   # Paris 12e — direct on line 8 (Daumesnil/Reuilly)
-    "75011": 19,   # Paris 11e — line 8 via Bastille/Ledru-Rollin
-    "75013": 24,   # Paris 13e — needs one change
-    "75010": 26,   # Paris 10e — line 8 far end
-    "75014": 30,   # Paris 14e — needs a change, south side
-    "75015": 28,   # Paris 15e — line 8 Lourmel/Commerce, ~8 stops
-    "75007": 30,   # Paris 7e — line 8 La Motte-Picquet, ~10 stops
-    "75009": 33,   # Paris 9e — line 8 via Opéra/Grands Boulevards
-    "75017": 38,   # Paris 17e — line 13 or 3 then change to 8
-    "75008": 35,   # Paris 8e — line 8 from Opéra, ~12 stops
-    "75018": 40,   # Paris 18e — line 4 or 12 then change
-    "75016": 45,   # Paris 16e — no direct line 8, multiple changes
+    # Maisons-Alfort / Charenton — on line 8
+    "94700": 4,    "94220": 6,
+    # East suburbs — fast access via line 8 or Nation interchange
+    "94160": 16,   # Saint-Mandé — line 1 → Nation → line 8
+    "94300": 20,   # Vincennes — line 1 → Nation → line 8
+    "94200": 24,   # Ivry-sur-Seine — walk/bus to Charenton → line 8
+    "94250": 28,   # Gentilly — bus to Charenton → line 8
+    "94270": 32,   # Le Kremlin-Bicêtre — line 7 → Opéra → line 8
+    # Paris — close to line 8 (direct or 1 change)
+    "75004": 22,   "75012": 15,   "75003": 24,   "75011": 19,
+    "75001": 28,   "75020": 30,   "75002": 30,   "75013": 24,
+    "75010": 26,   "75014": 30,   "75015": 28,   "75007": 30,
+    "75005": 32,   "75009": 33,   "75006": 35,   "75008": 35,
+    "75017": 38,   "75019": 38,   "75018": 40,   "75016": 45,
+    # South/west suburbs
+    "92120": 35,   # Montrouge — line 4 north then change
+    "92130": 35,   # Issy-les-Moulineaux — T2 → Balard → line 8
+    "92170": 35,   # Vanves — tram/bus → line 8 or line 13
+    "92240": 36,   # Malakoff — line 13 then change
+    "92100": 38,   # Boulogne-Billancourt — line 10 → La Motte-Picquet → line 8
+    "92200": 40,   # Neuilly-sur-Seine — line 1 → Bastille → line 8
+    "92110": 42,   # Clichy — line 13 then change
+    "92300": 43,   # Levallois-Perret — line 3 → Opéra → line 8
+    # East inner suburbs
+    "93100": 28,   # Montreuil — line 9 → Nation → line 8
+    "93170": 32,   # Bagnolet — line 3 → Nation → line 8
+    "93260": 37,   # Les Lilas — line 11 → République → line 8
+    "93400": 42,   # Saint-Ouen — line 13 then change
 }
 
 # Indicative rental €/m²/month per zone, for the "good value" half of the score.
 MEDIAN_EUR_M2 = {
-    "94700": 21, "94220": 24, "94160": 27,
-    "75010": 33, "75011": 33, "75012": 31, "75013": 30, "75014": 31,
-    "75015": 32, "75007": 42, "75009": 38, "75017": 34,
-    "75008": 43, "75018": 30, "75016": 38,
+    "94700": 21, "94220": 24, "94160": 27, "94300": 26,
+    "94200": 22, "94250": 22, "94270": 22,
+    "75001": 48, "75002": 45, "75003": 40, "75004": 42, "75005": 38,
+    "75006": 46, "75007": 42, "75008": 43, "75009": 38, "75010": 33,
+    "75011": 33, "75012": 31, "75013": 30, "75014": 31, "75015": 32,
+    "75016": 38, "75017": 34, "75018": 30, "75019": 28, "75020": 28,
+    "92100": 30, "92110": 25, "92120": 26, "92130": 28, "92170": 26,
+    "92200": 38, "92240": 24, "92300": 28,
+    "93100": 22, "93170": 22, "93260": 23, "93400": 20,
 }
 DEFAULT_MEDIAN = 30
 
@@ -83,40 +101,80 @@ DEFAULT_CONFIG = {
         "https://www.immocity.com/index.php?contr=biens_liste&tri_lots=date"
         "&type_transaction=1&localisation=Maisons+Alfort+-+94700"
         "&hidden-localisation="
-        "Paris+-+75007%2CParis+-+75008%2CParis+-+75009%2CParis+-+75010"
-        "%2CParis+-+75011%2CParis+-+75012%2CParis+-+75013%2CParis+-+75014"
-        "%2CParis+-+75015%2CParis+-+75016%2CParis+-+75017%2CParis+-+75018"
+        "Paris+-+75001%2CParis+-+75002%2CParis+-+75003%2CParis+-+75004"
+        "%2CParis+-+75005%2CParis+-+75006%2CParis+-+75007%2CParis+-+75008"
+        "%2CParis+-+75009%2CParis+-+75010%2CParis+-+75011%2CParis+-+75012"
+        "%2CParis+-+75013%2CParis+-+75014%2CParis+-+75015%2CParis+-+75016"
+        "%2CParis+-+75017%2CParis+-+75018%2CParis+-+75019%2CParis+-+75020"
         "%2CCharenton+Le+Pont+-+94220%2CMaisons+Alfort+-+94700"
+        "%2CVincennes+-+94300%2CSaint+Mande+-+94160%2CIvry+sur+Seine+-+94200"
+        "%2CGentilly+-+94250%2CLe+Kremlin+Bicetre+-+94270"
+        "%2CBoulogne+Billancourt+-+92100%2CClichy+-+92110%2CMontrouge+-+92120"
+        "%2CIssy+les+Moulineaux+-+92130%2CVanves+-+92170"
+        "%2CNeuilly+sur+Seine+-+92200%2CMalakoff+-+92240%2CLevallois+Perret+-+92300"
+        "%2CMontreuil+-+93100%2CBagnolet+-+93170%2CLes+Lilas+-+93260"
+        "%2CSaint+Ouen+-+93400"
         "&type_lot%5B%5D=appartement&surface=20&nb_piece=0&nb_chambre=0"
         "&budget_min=&budget_max=1000&page=0&vendus=0&submit_search_1="
     ),
     "foncia_zones": [
+        # Paris — all 20 arrondissements
+        "paris-75001", "paris-75002", "paris-75003", "paris-75004",
+        "paris-75005", "paris-75006", "paris-75007", "paris-75008",
+        "paris-75009", "paris-75010", "paris-75011", "paris-75012",
+        "paris-75013", "paris-75014", "paris-75015", "paris-75016",
+        "paris-75017", "paris-75018", "paris-75019", "paris-75020",
+        # Close suburbs (≤10 km from Paris ring)
         "maisons-alfort-94700", "charenton-le-pont-94220",
-        "paris-75007", "paris-75008", "paris-75009", "paris-75010",
-        "paris-75011", "paris-75012", "paris-75013", "paris-75014",
-        "paris-75015", "paris-75016", "paris-75017", "paris-75018",
+        "vincennes-94300", "saint-mande-94160",
+        "ivry-sur-seine-94200", "gentilly-94250", "le-kremlin-bicetre-94270",
+        "boulogne-billancourt-92100", "clichy-92110", "montrouge-92120",
+        "issy-les-moulineaux-92130", "vanves-92170", "neuilly-sur-seine-92200",
+        "malakoff-92240", "levallois-perret-92300",
+        "montreuil-93100", "bagnolet-93170", "les-lilas-93260", "saint-ouen-93400",
     ],
     "citya_zones": [
+        # Paris — all 20 arrondissements
+        "paris-1er-arrondissement-75001", "paris-02e-arrondissement-75002",
+        "paris-03e-arrondissement-75003", "paris-04e-arrondissement-75004",
+        "paris-05e-arrondissement-75005", "paris-06e-arrondissement-75006",
+        "paris-07e-arrondissement-75007", "paris-08e-arrondissement-75008",
+        "paris-09e-arrondissement-75009", "paris-10e-arrondissement-75010",
+        "paris-11e-arrondissement-75011", "paris-12e-arrondissement-75012",
+        "paris-13e-arrondissement-75013", "paris-14e-arrondissement-75014",
+        "paris-15e-arrondissement-75015", "paris-16e-arrondissement-75016",
+        "paris-17e-arrondissement-75017", "paris-18e-arrondissement-75018",
+        "paris-19e-arrondissement-75019", "paris-20e-arrondissement-75020",
+        # Close suburbs
         "maisons-alfort-94700", "charenton-le-pont-94220",
-        "paris-08e-arrondissement-75008", "paris-09e-arrondissement-75009",
-        "paris-10e-arrondissement-75010", "paris-11e-arrondissement-75011",
-        "paris-12e-arrondissement-75012", "paris-13e-arrondissement-75013",
-        "paris-14e-arrondissement-75014", "paris-15e-arrondissement-75015",
-        "paris-16e-arrondissement-75016", "paris-17e-arrondissement-75017",
-        "paris-18e-arrondissement-75018",
+        "vincennes-94300", "saint-mande-94160",
+        "ivry-sur-seine-94200", "gentilly-94250", "le-kremlin-bicetre-94270",
+        "boulogne-billancourt-92100", "clichy-92110", "montrouge-92120",
+        "issy-les-moulineaux-92130", "vanves-92170", "neuilly-sur-seine-92200",
+        "malakoff-92240", "levallois-perret-92300",
+        "montreuil-93100", "bagnolet-93170", "les-lilas-93260", "saint-ouen-93400",
     ],
     # Flatbay (Altarea) filters by free-text city; we keep only target postals.
-    "flatbay_zones": ["Maisons-Alfort", "Charenton-le-Pont", "Paris"],
+    "flatbay_zones": [
+        "Maisons-Alfort", "Charenton-le-Pont", "Paris",
+        "Vincennes", "Saint-Mandé", "Ivry-sur-Seine", "Gentilly",
+        "Le Kremlin-Bicêtre", "Boulogne-Billancourt", "Clichy", "Montrouge",
+        "Issy-les-Moulineaux", "Vanves", "Neuilly-sur-Seine", "Malakoff",
+        "Levallois-Perret", "Montreuil", "Bagnolet", "Les Lilas", "Saint-Ouen",
+    ],
     "flatbay_postals": [
-        "94700", "94220",
-        "75008", "75009", "75010", "75011", "75012", "75013",
-        "75014", "75015", "75016", "75017", "75018",
+        "94700", "94220", "94300", "94160", "94200", "94250", "94270",
+        "75001", "75002", "75003", "75004", "75005", "75006", "75007",
+        "75008", "75009", "75010", "75011", "75012", "75013", "75014",
+        "75015", "75016", "75017", "75018", "75019", "75020",
+        "92100", "92110", "92120", "92130", "92170", "92200", "92240", "92300",
+        "93100", "93170", "93260", "93400",
     ],
 
     # --- filters (same params as the ImmoCity search) ---
     "budget_max": 1000,        # €/month, inclusive
     "surface_min": 20,         # m²
-    "max_commute_min": 40,     # hard cap on commute to École Vétérinaire
+    "max_commute_min": 60,     # hard cap on commute to École Vétérinaire
     "min_score": 0.0,          # raise (e.g. 6.0) to only get the best deals
 
     "poll_minutes": 15,
