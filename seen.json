@@ -814,5 +814,17 @@
     "score": 2.5,
     "commute": 20,
     "first_seen": "2026-06-11T21:54:03"
+  },
+  "foncia:2277-214": {
+    "source": "foncia",
+    "ref": "2277-214",
+    "url": "https://fr.foncia.com/location/paris-75013/appartement/2277-214.htm",
+    "price": 890,
+    "surface": 25,
+    "rooms": "1 pièces",
+    "location": "75013",
+    "score": 2.6,
+    "commute": 24,
+    "first_seen": "2026-06-12T01:17:13"
   }
 }
