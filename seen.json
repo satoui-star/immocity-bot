@@ -826,5 +826,65 @@
     "score": 2.6,
     "commute": 24,
     "first_seen": "2026-06-12T01:17:13"
+  },
+  "foncia:331638712": {
+    "source": "foncia",
+    "ref": "331638712",
+    "url": "https://fr.foncia.com/location/paris-75014/appartement/331638712.htm",
+    "price": 946,
+    "surface": 31,
+    "rooms": "1 pièces",
+    "location": "75014",
+    "score": 3.9,
+    "commute": 30,
+    "first_seen": "2026-06-12T07:49:03"
+  },
+  "foncia:331664728": {
+    "source": "foncia",
+    "ref": "331664728",
+    "url": "https://fr.foncia.com/location/paris-75015/appartement/331664728.htm",
+    "price": 945,
+    "surface": 28,
+    "rooms": "2 pièces",
+    "location": "75015",
+    "score": 3.5,
+    "commute": 28,
+    "first_seen": "2026-06-12T07:49:04"
+  },
+  "foncia:300249063": {
+    "source": "foncia",
+    "ref": "300249063",
+    "url": "https://fr.foncia.com/location/boulogne-billancourt-92100/appartement/300249063.htm",
+    "price": 850,
+    "surface": 26,
+    "rooms": "1 pièces",
+    "location": "92100",
+    "score": 1.9,
+    "commute": 38,
+    "first_seen": "2026-06-12T07:49:05"
+  },
+  "foncia:331665696": {
+    "source": "foncia",
+    "ref": "331665696",
+    "url": "https://fr.foncia.com/location/vanves-92170/appartement/331665696.htm",
+    "price": 722,
+    "surface": 20,
+    "rooms": "1 pièces",
+    "location": "92170",
+    "score": 0.6,
+    "commute": 35,
+    "first_seen": "2026-06-12T07:49:05"
+  },
+  "foncia:331656130": {
+    "source": "foncia",
+    "ref": "331656130",
+    "url": "https://fr.foncia.com/location/montreuil-93100/appartement-meuble/331656130.htm",
+    "price": 769,
+    "surface": 20,
+    "rooms": "1 pièces",
+    "location": "93100",
+    "score": 1.5,
+    "commute": 28,
+    "first_seen": "2026-06-12T07:49:06"
   }
 }
