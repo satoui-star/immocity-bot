@@ -910,5 +910,17 @@
     "score": 1.7,
     "commute": 38,
     "first_seen": "2026-06-15T10:24:35"
+  },
+  "foncia:331662796": {
+    "source": "foncia",
+    "ref": "331662796",
+    "url": "https://fr.foncia.com/location/boulogne-billancourt-92100/appartement/331662796.htm",
+    "price": 849,
+    "surface": 25,
+    "rooms": "1 pièces",
+    "location": "92100",
+    "score": 1.4,
+    "commute": 38,
+    "first_seen": "2026-06-15T15:06:37"
   }
 }
