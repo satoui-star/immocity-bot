@@ -958,5 +958,17 @@
     "score": 0.6,
     "commute": 35,
     "first_seen": "2026-06-16T09:36:53"
+  },
+  "flatbay:3443": {
+    "source": "flatbay",
+    "ref": "3443",
+    "url": "https://altarea.flatbay.fr/fr/property/show/3443",
+    "price": 975,
+    "surface": 36,
+    "rooms": "2 pièces",
+    "location": "92110",
+    "score": 1.7,
+    "commute": 42,
+    "first_seen": "2026-06-16T11:02:55"
   }
 }
