@@ -1030,5 +1030,17 @@
     "score": 1.5,
     "commute": 28,
     "first_seen": "2026-06-17T14:48:00"
+  },
+  "foncia:331688544": {
+    "source": "foncia",
+    "ref": "331688544",
+    "url": "https://fr.foncia.com/location/issy-les-moulineaux-92130/appartement/331688544.htm",
+    "price": 850,
+    "surface": 32,
+    "rooms": "1 pièces",
+    "location": "92130",
+    "score": 3.6,
+    "commute": 35,
+    "first_seen": "2026-06-18T10:33:00"
   }
 }
