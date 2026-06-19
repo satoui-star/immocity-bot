@@ -1054,5 +1054,17 @@
     "score": 5.8,
     "commute": 6,
     "first_seen": "2026-06-18T14:02:51"
+  },
+  "foncia:331587192": {
+    "source": "foncia",
+    "ref": "331587192",
+    "url": "https://fr.foncia.com/location/paris-75011/appartement/331587192.htm",
+    "price": 926,
+    "surface": 29,
+    "rooms": "1 pièces",
+    "location": "75011",
+    "score": 5.4,
+    "commute": 19,
+    "first_seen": "2026-06-19T10:20:15"
   }
 }
