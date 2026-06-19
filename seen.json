@@ -1066,5 +1066,29 @@
     "score": 5.4,
     "commute": 19,
     "first_seen": "2026-06-19T10:20:15"
+  },
+  "foncia:23002-613": {
+    "source": "foncia",
+    "ref": "23002-613",
+    "url": "https://fr.foncia.com/location/levallois-perret-92300/appartement/23002-613.htm",
+    "price": 945,
+    "surface": 27,
+    "rooms": "1 pièces",
+    "location": "92300",
+    "score": 0.0,
+    "commute": 43,
+    "first_seen": "2026-06-19T13:21:00"
+  },
+  "foncia:331686197": {
+    "source": "foncia",
+    "ref": "331686197",
+    "url": "https://fr.foncia.com/location/bagnolet-93170/appartement/331686197.htm",
+    "price": 898,
+    "surface": 37,
+    "rooms": "1 pièces",
+    "location": "93170",
+    "score": 2.5,
+    "commute": 32,
+    "first_seen": "2026-06-19T13:21:01"
   }
 }
