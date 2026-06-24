@@ -1162,5 +1162,17 @@
     "score": 2.5,
     "commute": 24,
     "first_seen": "2026-06-24T12:47:45"
+  },
+  "foncia:331680626": {
+    "source": "foncia",
+    "ref": "331680626",
+    "url": "https://fr.foncia.com/location/vincennes-94300/appartement/331680626.htm",
+    "price": 801,
+    "surface": 24,
+    "rooms": "1 pièces",
+    "location": "94300",
+    "score": 2.5,
+    "commute": 20,
+    "first_seen": "2026-06-24T14:17:56"
   }
 }
