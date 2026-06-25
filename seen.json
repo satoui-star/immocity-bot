@@ -1174,5 +1174,17 @@
     "score": 2.5,
     "commute": 20,
     "first_seen": "2026-06-24T14:17:56"
+  },
+  "foncia:30071-2672": {
+    "source": "foncia",
+    "ref": "30071-2672",
+    "url": "https://fr.foncia.com/location/neuilly-sur-seine-92200/appartement/30071-2672.htm",
+    "price": null,
+    "surface": 46,
+    "rooms": "2 pièces",
+    "location": "92200",
+    "score": 2.5,
+    "commute": 40,
+    "first_seen": "2026-06-25T01:22:00"
   }
 }
