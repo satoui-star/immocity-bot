@@ -1222,5 +1222,17 @@
     "score": 2.8,
     "commute": 28,
     "first_seen": "2026-06-26T13:08:57"
+  },
+  "foncia:331687526": {
+    "source": "foncia",
+    "ref": "331687526",
+    "url": "https://fr.foncia.com/location/paris-75018/appartement/331687526.htm",
+    "price": 881,
+    "surface": 33,
+    "rooms": "1 pièces",
+    "location": "75018",
+    "score": 3.6,
+    "commute": 40,
+    "first_seen": "2026-06-26T15:02:58"
   }
 }
