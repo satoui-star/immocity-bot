@@ -1234,5 +1234,17 @@
     "score": 3.6,
     "commute": 40,
     "first_seen": "2026-06-26T15:02:58"
+  },
+  "flatbay:1755": {
+    "source": "flatbay",
+    "ref": "1755",
+    "url": "https://altarea.flatbay.fr/fr/property/show/1755",
+    "price": 820,
+    "surface": 32,
+    "rooms": "1 pièces",
+    "location": "93400",
+    "score": 0.0,
+    "commute": 42,
+    "first_seen": "2026-06-28T21:22:01"
   }
 }
