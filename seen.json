@@ -1342,5 +1342,17 @@
     "score": 3.8,
     "commute": 19,
     "first_seen": "2026-07-02T13:47:49"
+  },
+  "foncia:331689257": {
+    "source": "foncia",
+    "ref": "331689257",
+    "url": "https://fr.foncia.com/location/paris-75009/appartement-meuble/331689257.htm",
+    "price": 975,
+    "surface": 21,
+    "rooms": "1 pièces",
+    "location": "75009",
+    "score": 1.2,
+    "commute": 33,
+    "first_seen": "2026-07-02T14:03:01"
   }
 }
