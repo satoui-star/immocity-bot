@@ -1414,5 +1414,17 @@
     "score": 2.2,
     "commute": 35,
     "first_seen": "2026-07-04T15:03:13"
+  },
+  "immocity:10431": {
+    "source": "immocity",
+    "ref": "10431",
+    "url": "https://www.immocity.com/gera3602-location-appartement-1-piece-paris-75015/appartement-10431.html",
+    "price": 990,
+    "surface": 28,
+    "rooms": "1 pièces",
+    "location": "75015",
+    "score": 3.0,
+    "commute": 28,
+    "first_seen": "2026-07-04T15:32:17"
   }
 }
