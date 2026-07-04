@@ -1402,5 +1402,17 @@
     "score": 1.2,
     "commute": 30,
     "first_seen": "2026-07-03T12:47:19"
+  },
+  "immocity:13859": {
+    "source": "immocity",
+    "ref": "13859",
+    "url": "https://www.immocity.com/sgim2729-location-appartement-1-piece-montrouge-92120/appartement-13859.html",
+    "price": 739,
+    "surface": 26,
+    "rooms": "1 pièces",
+    "location": "92120",
+    "score": 2.2,
+    "commute": 35,
+    "first_seen": "2026-07-04T15:03:13"
   }
 }
