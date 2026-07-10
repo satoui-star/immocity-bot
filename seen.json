@@ -1558,5 +1558,17 @@
     "score": 1.5,
     "commute": 28,
     "first_seen": "2026-07-09T18:27:22"
+  },
+  "immocity:3351": {
+    "source": "immocity",
+    "ref": "3351",
+    "url": "https://www.immocity.com/gera2721-location-appartement-4-pieces-paris-75010/appartement-3351.html",
+    "price": 0,
+    "surface": 51,
+    "rooms": "4 pièces",
+    "location": "75010",
+    "score": 4.2,
+    "commute": 26,
+    "first_seen": "2026-07-10T06:18:10"
   }
 }
