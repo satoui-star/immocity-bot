@@ -1594,5 +1594,17 @@
     "score": 1.0,
     "commute": 35,
     "first_seen": "2026-07-14T02:39:24"
+  },
+  "foncia:331695041": {
+    "source": "foncia",
+    "ref": "331695041",
+    "url": "https://fr.foncia.com/location/paris-75015/appartement/331695041.htm",
+    "price": 852,
+    "surface": 22,
+    "rooms": "1 pièces",
+    "location": "75015",
+    "score": 1.9,
+    "commute": 28,
+    "first_seen": "2026-07-15T08:33:42"
   }
 }
