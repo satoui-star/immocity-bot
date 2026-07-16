@@ -1702,5 +1702,17 @@
     "score": 3.5,
     "commute": 42,
     "first_seen": "2026-07-16T15:03:21"
+  },
+  "immocity:11201": {
+    "source": "immocity",
+    "ref": "11201",
+    "url": "https://www.immocity.com/gerl461-location-appartement-2-pieces-paris-75019/appartement-11201.html",
+    "price": 899,
+    "surface": 33,
+    "rooms": "2 pièces",
+    "location": "75019",
+    "score": 3.0,
+    "commute": 38,
+    "first_seen": "2026-07-16T17:33:05"
   }
 }
