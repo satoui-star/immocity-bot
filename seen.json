@@ -1642,5 +1642,29 @@
     "score": 0.0,
     "commute": 43,
     "first_seen": "2026-07-16T01:03:24"
+  },
+  "foncia:331683906": {
+    "source": "foncia",
+    "ref": "331683906",
+    "url": "https://fr.foncia.com/location/montrouge-92120/appartement/331683906.htm",
+    "price": 829,
+    "surface": 24,
+    "rooms": "1 pièces",
+    "location": "92120",
+    "score": 0.6,
+    "commute": 35,
+    "first_seen": "2026-07-16T10:24:27"
+  },
+  "foncia:331598495": {
+    "source": "foncia",
+    "ref": "331598495",
+    "url": "https://fr.foncia.com/location/montrouge-92120/appartement/331598495.htm",
+    "price": 884,
+    "surface": 27,
+    "rooms": "1 pièces",
+    "location": "92120",
+    "score": 0.6,
+    "commute": 35,
+    "first_seen": "2026-07-16T10:24:28"
   }
 }
