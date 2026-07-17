@@ -1750,5 +1750,17 @@
     "score": 1.2,
     "commute": 30,
     "first_seen": "2026-07-17T14:33:02"
+  },
+  "foncia:331695490": {
+    "source": "foncia",
+    "ref": "331695490",
+    "url": "https://fr.foncia.com/location/paris-75012/appartement-meuble/331695490.htm",
+    "price": 980,
+    "surface": 30,
+    "rooms": "1 pièces",
+    "location": "75012",
+    "score": 5.1,
+    "commute": 15,
+    "first_seen": "2026-07-17T15:03:09"
   }
 }
