@@ -1834,5 +1834,17 @@
     "score": 0.4,
     "commute": 42,
     "first_seen": "2026-07-21T07:32:59"
+  },
+  "immocity:13870": {
+    "source": "immocity",
+    "ref": "13870",
+    "url": "https://www.immocity.com/bauc87-location-appartement-2-pieces-clichy-92110/appartement-13870.html",
+    "price": 866,
+    "surface": 34,
+    "rooms": "2 pièces",
+    "location": "92110",
+    "score": 2.3,
+    "commute": 42,
+    "first_seen": "2026-07-21T07:47:37"
   }
 }
