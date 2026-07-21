@@ -1858,5 +1858,17 @@
     "score": 5.6,
     "commute": 15,
     "first_seen": "2026-07-21T17:03:06"
+  },
+  "immocity:10636": {
+    "source": "immocity",
+    "ref": "10636",
+    "url": "https://www.immocity.com/gera3654-location-appartement-paris-75015/appartement-10636.html",
+    "price": 943,
+    "surface": 27,
+    "rooms": "0 pièces",
+    "location": "75015",
+    "score": 3.1,
+    "commute": 28,
+    "first_seen": "2026-07-21T20:33:04"
   }
 }
