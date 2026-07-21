@@ -1822,5 +1822,17 @@
     "score": 3.7,
     "commute": 35,
     "first_seen": "2026-07-20T16:03:03"
+  },
+  "immocity:13869": {
+    "source": "immocity",
+    "ref": "13869",
+    "url": "https://www.immocity.com/bauc86-location-appartement-1-piece-clichy-92110/appartement-13869.html",
+    "price": 695,
+    "surface": 23,
+    "rooms": "1 pièces",
+    "location": "92110",
+    "score": 0.4,
+    "commute": 42,
+    "first_seen": "2026-07-21T07:32:59"
   }
 }
