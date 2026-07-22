@@ -1882,5 +1882,29 @@
     "score": 2.5,
     "commute": 20,
     "first_seen": "2026-07-22T14:17:36"
+  },
+  "foncia:331680412": {
+    "source": "foncia",
+    "ref": "331680412",
+    "url": "https://fr.foncia.com/location/paris-75019/appartement/331680412.htm",
+    "price": 782,
+    "surface": 27,
+    "rooms": "1 pièces",
+    "location": "75019",
+    "score": 2.4,
+    "commute": 38,
+    "first_seen": "2026-07-22T15:20:26"
+  },
+  "foncia:331634613": {
+    "source": "foncia",
+    "ref": "331634613",
+    "url": "https://fr.foncia.com/location/paris-75020/appartement/331634613.htm",
+    "price": 853,
+    "surface": 29,
+    "rooms": "2 pièces",
+    "location": "75020",
+    "score": 3.2,
+    "commute": 30,
+    "first_seen": "2026-07-22T15:20:27"
   }
 }
