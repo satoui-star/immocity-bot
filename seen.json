@@ -1966,5 +1966,17 @@
     "score": 3.6,
     "commute": 42,
     "first_seen": "2026-07-23T17:03:24"
+  },
+  "foncia:331584055": {
+    "source": "foncia",
+    "ref": "331584055",
+    "url": "https://fr.foncia.com/location/paris-75020/appartement/331584055.htm",
+    "price": 999,
+    "surface": 29,
+    "rooms": "1 pièces",
+    "location": "75020",
+    "score": 1.4,
+    "commute": 30,
+    "first_seen": "2026-07-24T11:03:35"
   }
 }
