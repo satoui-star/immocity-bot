@@ -1990,5 +1990,17 @@
     "score": 0.6,
     "commute": 35,
     "first_seen": "2026-07-24T12:03:25"
+  },
+  "foncia:331687198": {
+    "source": "foncia",
+    "ref": "331687198",
+    "url": "https://fr.foncia.com/location/malakoff-92240/appartement/331687198.htm",
+    "price": 719,
+    "surface": 24,
+    "rooms": "1 pièces",
+    "location": "92240",
+    "score": 0.5,
+    "commute": 36,
+    "first_seen": "2026-07-24T15:33:18"
   }
 }
