@@ -2026,5 +2026,17 @@
     "score": 2.1,
     "commute": 26,
     "first_seen": "2026-07-27T16:42:43"
+  },
+  "foncia:331693371": {
+    "source": "foncia",
+    "ref": "331693371",
+    "url": "https://fr.foncia.com/location/paris-75013/appartement/331693371.htm",
+    "price": 943,
+    "surface": 28,
+    "rooms": "2 pièces",
+    "location": "75013",
+    "score": 3.3,
+    "commute": 24,
+    "first_seen": "2026-07-27T18:03:51"
   }
 }
