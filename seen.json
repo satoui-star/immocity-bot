@@ -2014,5 +2014,17 @@
     "score": 2.5,
     "commute": 40,
     "first_seen": "2026-07-27T01:17:52"
+  },
+  "citya:GES02020103-943": {
+    "source": "citya",
+    "ref": "GES02020103-943",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-10e-arrondissement-75010/GES02020103-943",
+    "price": 922,
+    "surface": 23,
+    "rooms": "1 pièces",
+    "location": "75010",
+    "score": 2.1,
+    "commute": 26,
+    "first_seen": "2026-07-27T16:42:43"
   }
 }
