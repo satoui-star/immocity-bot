@@ -2002,5 +2002,17 @@
     "score": 0.5,
     "commute": 36,
     "first_seen": "2026-07-24T15:33:18"
+  },
+  "foncia:30071-141": {
+    "source": "foncia",
+    "ref": "30071-141",
+    "url": "https://fr.foncia.com/location/neuilly-sur-seine-92200/appartement/30071-141.htm",
+    "price": null,
+    "surface": 233,
+    "rooms": "5 pièces",
+    "location": "92200",
+    "score": 2.5,
+    "commute": 40,
+    "first_seen": "2026-07-27T01:17:52"
   }
 }
