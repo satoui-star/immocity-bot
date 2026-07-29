@@ -2098,5 +2098,17 @@
     "score": 4.0,
     "commute": 45,
     "first_seen": "2026-07-29T16:47:41"
+  },
+  "citya:GES41370151-968": {
+    "source": "citya",
+    "ref": "GES41370151-968",
+    "url": "https://www.citya.com/annonces/location/appartement/levallois-perret-92300/GES41370151-968",
+    "price": 608,
+    "surface": 24,
+    "rooms": "1 pièces",
+    "location": "92300",
+    "score": 3.5,
+    "commute": 43,
+    "first_seen": "2026-07-29T18:17:40"
   }
 }
