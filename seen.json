@@ -2146,5 +2146,17 @@
     "score": 0.2,
     "commute": 38,
     "first_seen": "2026-07-31T08:32:59"
+  },
+  "foncia:331649461": {
+    "source": "foncia",
+    "ref": "331649461",
+    "url": "https://fr.foncia.com/location/paris-75018/appartement-meuble/331649461.htm",
+    "price": 974,
+    "surface": 27,
+    "rooms": "1 pièces",
+    "location": "75018",
+    "score": 0.5,
+    "commute": 40,
+    "first_seen": "2026-07-31T18:51:14"
   }
 }
