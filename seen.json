@@ -2182,5 +2182,17 @@
     "score": 2.2,
     "commute": 30,
     "first_seen": "2026-08-04T08:32:40"
+  },
+  "foncia:331691399": {
+    "source": "foncia",
+    "ref": "331691399",
+    "url": "https://fr.foncia.com/location/bagnolet-93170/appartement/331691399.htm",
+    "price": 628,
+    "surface": 22,
+    "rooms": "1 pièces",
+    "location": "93170",
+    "score": 1.0,
+    "commute": 32,
+    "first_seen": "2026-08-04T13:47:57"
   }
 }
