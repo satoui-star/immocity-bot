@@ -2206,5 +2206,17 @@
     "score": 4.3,
     "commute": 24,
     "first_seen": "2026-08-04T14:47:44"
+  },
+  "citya:GES32900246-597": {
+    "source": "citya",
+    "ref": "GES32900246-597",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-20e-arrondissement-75020/GES32900246-597",
+    "price": 975,
+    "surface": 30,
+    "rooms": "1 pièces",
+    "location": "75020",
+    "score": 2.1,
+    "commute": 30,
+    "first_seen": "2026-08-04T16:17:52"
   }
 }
