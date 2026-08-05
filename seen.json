@@ -2230,5 +2230,17 @@
     "score": 4.5,
     "commute": 22,
     "first_seen": "2026-08-04T18:47:37"
+  },
+  "foncia:331703352": {
+    "source": "foncia",
+    "ref": "331703352",
+    "url": "https://fr.foncia.com/location/montrouge-92120/appartement/331703352.htm",
+    "price": 966,
+    "surface": 38,
+    "rooms": "2 pièces",
+    "location": "92120",
+    "score": 3.3,
+    "commute": 35,
+    "first_seen": "2026-08-05T10:03:34"
   }
 }
