@@ -2266,5 +2266,17 @@
     "score": 3.6,
     "commute": 20,
     "first_seen": "2026-08-06T13:47:20"
+  },
+  "immocity:8771": {
+    "source": "immocity",
+    "ref": "8771",
+    "url": "https://www.immocity.com/sgim1407-location-appartement-1-piece-clichy-92110/appartement-8771.html",
+    "price": 839,
+    "surface": 26,
+    "rooms": "1 pièces",
+    "location": "92110",
+    "score": 0.0,
+    "commute": 42,
+    "first_seen": "2026-08-06T15:03:08"
   }
 }
