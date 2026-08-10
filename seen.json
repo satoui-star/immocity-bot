@@ -2314,5 +2314,17 @@
     "score": 0.0,
     "commute": 42,
     "first_seen": "2026-08-10T10:47:48"
+  },
+  "citya:GES06610047-478": {
+    "source": "citya",
+    "ref": "GES06610047-478",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-17e-arrondissement-75017/GES06610047-478",
+    "price": 950,
+    "surface": 31,
+    "rooms": "2 pièces",
+    "location": "75017",
+    "score": 3.7,
+    "commute": 38,
+    "first_seen": "2026-08-10T14:17:27"
   }
 }
