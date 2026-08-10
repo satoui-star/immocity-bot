@@ -2290,5 +2290,17 @@
     "score": 4.4,
     "commute": 40,
     "first_seen": "2026-08-08T01:17:35"
+  },
+  "foncia:331694616": {
+    "source": "foncia",
+    "ref": "331694616",
+    "url": "https://fr.foncia.com/location/paris-75019/appartement/331694616.htm",
+    "price": 847,
+    "surface": 30,
+    "rooms": "1 pièces",
+    "location": "75019",
+    "score": 2.7,
+    "commute": 38,
+    "first_seen": "2026-08-10T07:54:37"
   }
 }
