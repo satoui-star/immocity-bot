@@ -2350,5 +2350,17 @@
     "score": 0.0,
     "commute": 42,
     "first_seen": "2026-08-11T12:32:46"
+  },
+  "citya:GES78150006-846": {
+    "source": "citya",
+    "ref": "GES78150006-846",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-15e-arrondissement-75015/GES78150006-846",
+    "price": 1000,
+    "surface": 23,
+    "rooms": "1 pièces",
+    "location": "75015",
+    "score": 1.5,
+    "commute": 28,
+    "first_seen": "2026-08-11T16:17:49"
   }
 }
