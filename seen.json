@@ -2338,5 +2338,17 @@
     "score": 2.7,
     "commute": 38,
     "first_seen": "2026-08-11T07:32:31"
+  },
+  "immocity:13885": {
+    "source": "immocity",
+    "ref": "13885",
+    "url": "https://www.immocity.com/gera4529-location-appartement-1-piece-clichy-92110/appartement-13885.html",
+    "price": 839,
+    "surface": 26,
+    "rooms": "1 pièces",
+    "location": "92110",
+    "score": 0.0,
+    "commute": 42,
+    "first_seen": "2026-08-11T12:32:46"
   }
 }
