@@ -2398,5 +2398,17 @@
     "score": 2.7,
     "commute": 36,
     "first_seen": "2026-08-12T12:00:12"
+  },
+  "foncia:331682055": {
+    "source": "foncia",
+    "ref": "331682055",
+    "url": "https://fr.foncia.com/location/paris-75014/appartement/331682055.htm",
+    "price": 889,
+    "surface": 25,
+    "rooms": "1 pièces",
+    "location": "75014",
+    "score": 2.3,
+    "commute": 30,
+    "first_seen": "2026-08-12T14:03:30"
   }
 }
