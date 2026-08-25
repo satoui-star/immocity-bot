@@ -2590,5 +2590,17 @@
     "score": 1.2,
     "commute": 42,
     "first_seen": "2026-08-25T10:18:09"
+  },
+  "immocity:13906": {
+    "source": "immocity",
+    "ref": "13906",
+    "url": "https://www.immocity.com/sgim2739-location-appartement-1-piece-boulogne-billancourt-92100/appartement-13906.html",
+    "price": 780,
+    "surface": 25,
+    "rooms": "1 pièces",
+    "location": "92100",
+    "score": 2.4,
+    "commute": 38,
+    "first_seen": "2026-08-25T18:03:57"
   }
 }
