@@ -2626,5 +2626,17 @@
     "score": 5.1,
     "commute": 4,
     "first_seen": "2026-08-26T13:33:40"
+  },
+  "immocity:13909": {
+    "source": "immocity",
+    "ref": "13909",
+    "url": "https://www.immocity.com/sgim2741-location-appartement-2-pieces-gentilly-94250/appartement-13909.html",
+    "price": 950,
+    "surface": 34,
+    "rooms": "2 pièces",
+    "location": "94250",
+    "score": 1.5,
+    "commute": 28,
+    "first_seen": "2026-08-26T14:17:58"
   }
 }
