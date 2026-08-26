@@ -2650,5 +2650,17 @@
     "score": 3.5,
     "commute": 38,
     "first_seen": "2026-08-26T16:18:01"
+  },
+  "citya:GES25910003-943": {
+    "source": "citya",
+    "ref": "GES25910003-943",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-11e-arrondissement-75011/GES25910003-943",
+    "price": 924,
+    "surface": 23,
+    "rooms": "1 pièces",
+    "location": "75011",
+    "score": 3.0,
+    "commute": 19,
+    "first_seen": "2026-08-26T16:33:38"
   }
 }
