@@ -2674,5 +2674,17 @@
     "score": 2.5,
     "commute": 20,
     "first_seen": "2026-08-27T15:33:10"
+  },
+  "citya:GES04030005-478": {
+    "source": "citya",
+    "ref": "GES04030005-478",
+    "url": "https://www.citya.com/annonces/location/appartement/charenton-le-pont-94220/GES04030005-478",
+    "price": 975,
+    "surface": 34,
+    "rooms": "2 pièces",
+    "location": "94220",
+    "score": 4.8,
+    "commute": 6,
+    "first_seen": "2026-08-27T16:18:25"
   }
 }
