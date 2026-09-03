@@ -2758,5 +2758,17 @@
     "score": 0.6,
     "commute": 35,
     "first_seen": "2026-09-03T09:05:43"
+  },
+  "foncia:331695518": {
+    "source": "foncia",
+    "ref": "331695518",
+    "url": "https://fr.foncia.com/location/charenton-le-pont-94220/appartement/331695518.htm",
+    "price": 830,
+    "surface": 28,
+    "rooms": "2 pièces",
+    "location": "94220",
+    "score": 4.4,
+    "commute": 6,
+    "first_seen": "2026-09-03T13:35:22"
   }
 }
