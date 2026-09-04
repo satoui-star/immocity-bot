@@ -2770,5 +2770,29 @@
     "score": 4.4,
     "commute": 6,
     "first_seen": "2026-09-03T13:35:22"
+  },
+  "foncia:331664187": {
+    "source": "foncia",
+    "ref": "331664187",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement/331664187.htm",
+    "price": 850,
+    "surface": 27,
+    "rooms": "2 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-09-04T15:34:55"
+  },
+  "foncia:2331-312": {
+    "source": "foncia",
+    "ref": "2331-312",
+    "url": "https://fr.foncia.com/location/boulogne-billancourt-92100/appartement/2331-312.htm",
+    "price": 980,
+    "surface": 34,
+    "rooms": "1 pièces",
+    "location": "92100",
+    "score": 3.1,
+    "commute": 38,
+    "first_seen": "2026-09-04T15:34:56"
   }
 }
