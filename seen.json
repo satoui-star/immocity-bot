@@ -2794,5 +2794,17 @@
     "score": 3.1,
     "commute": 38,
     "first_seen": "2026-09-04T15:34:56"
+  },
+  "foncia:331711447": {
+    "source": "foncia",
+    "ref": "331711447",
+    "url": "https://fr.foncia.com/location/montreuil-93100/appartement/331711447.htm",
+    "price": 795,
+    "surface": 29,
+    "rooms": "1 pièces",
+    "location": "93100",
+    "score": 1.5,
+    "commute": 28,
+    "first_seen": "2026-09-04T18:35:25"
   }
 }
