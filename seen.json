@@ -2854,5 +2854,17 @@
     "score": 0.6,
     "commute": 35,
     "first_seen": "2026-09-08T17:20:48"
+  },
+  "foncia:331697446": {
+    "source": "foncia",
+    "ref": "331697446",
+    "url": "https://fr.foncia.com/location/levallois-perret-92300/appartement/331697446.htm",
+    "price": 971,
+    "surface": 31,
+    "rooms": "2 pièces",
+    "location": "92300",
+    "score": 1.3,
+    "commute": 43,
+    "first_seen": "2026-09-09T17:27:54"
   }
 }
