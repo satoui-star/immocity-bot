@@ -2902,5 +2902,29 @@
     "score": 4.3,
     "commute": 35,
     "first_seen": "2026-09-12T09:38:17"
+  },
+  "foncia:331659928": {
+    "source": "foncia",
+    "ref": "331659928",
+    "url": "https://fr.foncia.com/location/paris-75009/appartement/331659928.htm",
+    "price": 915,
+    "surface": 23,
+    "rooms": "1 pièces",
+    "location": "75009",
+    "score": 2.9,
+    "commute": 33,
+    "first_seen": "2026-09-14T19:06:00"
+  },
+  "foncia:331714227": {
+    "source": "foncia",
+    "ref": "331714227",
+    "url": "https://fr.foncia.com/location/montrouge-92120/appartement/331714227.htm",
+    "price": 701,
+    "surface": 25,
+    "rooms": "1 pièces",
+    "location": "92120",
+    "score": 2.3,
+    "commute": 35,
+    "first_seen": "2026-09-14T19:06:01"
   }
 }
