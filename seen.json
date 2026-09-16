@@ -2926,5 +2926,17 @@
     "score": 2.3,
     "commute": 35,
     "first_seen": "2026-09-14T19:06:01"
+  },
+  "foncia:331684836": {
+    "source": "foncia",
+    "ref": "331684836",
+    "url": "https://fr.foncia.com/location/paris-75012/appartement/331684836.htm",
+    "price": 995,
+    "surface": 32,
+    "rooms": "1 pièces",
+    "location": "75012",
+    "score": 5.6,
+    "commute": 15,
+    "first_seen": "2026-09-16T12:58:47"
   }
 }
