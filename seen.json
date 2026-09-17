@@ -2950,5 +2950,29 @@
     "score": 2.9,
     "commute": 35,
     "first_seen": "2026-09-16T20:19:33"
+  },
+  "citya:GES10130553-895": {
+    "source": "citya",
+    "ref": "GES10130553-895",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-12e-arrondissement-75012/GES10130553-895",
+    "price": 903,
+    "surface": 27,
+    "rooms": "1 pièces",
+    "location": "75012",
+    "score": 4.8,
+    "commute": 15,
+    "first_seen": "2026-09-17T19:26:34"
+  },
+  "citya:GES78100008-846": {
+    "source": "citya",
+    "ref": "GES78100008-846",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-15e-arrondissement-75015/GES78100008-846",
+    "price": 977,
+    "surface": 22,
+    "rooms": "1 pièces",
+    "location": "75015",
+    "score": 1.5,
+    "commute": 28,
+    "first_seen": "2026-09-17T19:26:35"
   }
 }
