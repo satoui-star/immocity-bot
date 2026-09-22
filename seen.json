@@ -2998,5 +2998,29 @@
     "score": 1.2,
     "commute": 30,
     "first_seen": "2026-09-21T19:26:14"
+  },
+  "foncia:331715978": {
+    "source": "foncia",
+    "ref": "331715978",
+    "url": "https://fr.foncia.com/location/paris-75018/appartement/331715978.htm",
+    "price": 870,
+    "surface": 26,
+    "rooms": "1 pièces",
+    "location": "75018",
+    "score": 1.3,
+    "commute": 40,
+    "first_seen": "2026-09-22T11:34:47"
+  },
+  "foncia:331656548": {
+    "source": "foncia",
+    "ref": "331656548",
+    "url": "https://fr.foncia.com/location/vanves-92170/appartement/331656548.htm",
+    "price": 837,
+    "surface": 31,
+    "rooms": "1 pièces",
+    "location": "92170",
+    "score": 2.7,
+    "commute": 35,
+    "first_seen": "2026-09-22T11:34:48"
   }
 }
