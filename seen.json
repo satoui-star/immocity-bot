@@ -3022,5 +3022,41 @@
     "score": 2.7,
     "commute": 35,
     "first_seen": "2026-09-22T11:34:48"
+  },
+  "foncia:331716181": {
+    "source": "foncia",
+    "ref": "331716181",
+    "url": "https://fr.foncia.com/location/boulogne-billancourt-92100/appartement/331716181.htm",
+    "price": 964,
+    "surface": 27,
+    "rooms": "1 pièces",
+    "location": "92100",
+    "score": 0.8,
+    "commute": 38,
+    "first_seen": "2026-09-22T15:43:22"
+  },
+  "foncia:331708626": {
+    "source": "foncia",
+    "ref": "331708626",
+    "url": "https://fr.foncia.com/location/clichy-92110/appartement/331708626.htm",
+    "price": 876,
+    "surface": 33,
+    "rooms": "2 pièces",
+    "location": "92110",
+    "score": 1.9,
+    "commute": 42,
+    "first_seen": "2026-09-22T15:43:23"
+  },
+  "foncia:331712936": {
+    "source": "foncia",
+    "ref": "331712936",
+    "url": "https://fr.foncia.com/location/montrouge-92120/appartement/331712936.htm",
+    "price": 880,
+    "surface": 27,
+    "rooms": "1 pièces",
+    "location": "92120",
+    "score": 0.6,
+    "commute": 35,
+    "first_seen": "2026-09-22T15:43:24"
   }
 }
