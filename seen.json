@@ -3106,5 +3106,29 @@
     "score": 0.6,
     "commute": 35,
     "first_seen": "2026-09-23T09:48:34"
+  },
+  "immocity:8699": {
+    "source": "immocity",
+    "ref": "8699",
+    "url": "https://www.immocity.com/sgim1335-location-appartement-2-pieces-montrouge-92120/appartement-8699.html",
+    "price": 965,
+    "surface": 36,
+    "rooms": "2 pièces",
+    "location": "92120",
+    "score": 2.8,
+    "commute": 35,
+    "first_seen": "2026-09-23T18:39:15"
+  },
+  "foncia:331709095": {
+    "source": "foncia",
+    "ref": "331709095",
+    "url": "https://fr.foncia.com/location/paris-75012/appartement-meuble/331709095.htm",
+    "price": 903,
+    "surface": 21,
+    "rooms": "1 pièces",
+    "location": "75012",
+    "score": 3.1,
+    "commute": 15,
+    "first_seen": "2026-09-23T18:39:17"
   }
 }
