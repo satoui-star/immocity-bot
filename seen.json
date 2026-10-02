@@ -3178,5 +3178,17 @@
     "score": 0.6,
     "commute": 35,
     "first_seen": "2026-09-30T19:16:53"
+  },
+  "foncia:331711663": {
+    "source": "foncia",
+    "ref": "331711663",
+    "url": "https://fr.foncia.com/location/maisons-alfort-94700/appartement/331711663.htm",
+    "price": 890,
+    "surface": 36,
+    "rooms": "2 pièces",
+    "location": "94700",
+    "score": 5.2,
+    "commute": 4,
+    "first_seen": "2026-10-02T16:46:01"
   }
 }
