@@ -3226,5 +3226,29 @@
     "score": 0.6,
     "commute": 35,
     "first_seen": "2026-10-06T09:10:11"
+  },
+  "foncia:331715980": {
+    "source": "foncia",
+    "ref": "331715980",
+    "url": "https://fr.foncia.com/location/boulogne-billancourt-92100/appartement/331715980.htm",
+    "price": 888,
+    "surface": 30,
+    "rooms": "1 pièces",
+    "location": "92100",
+    "score": 2.9,
+    "commute": 38,
+    "first_seen": "2026-10-06T15:55:31"
+  },
+  "citya:GES31050070-182": {
+    "source": "citya",
+    "ref": "GES31050070-182",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-20e-arrondissement-75020/GES31050070-182",
+    "price": 973,
+    "surface": 27,
+    "rooms": "1 pièces",
+    "location": "75020",
+    "score": 1.2,
+    "commute": 30,
+    "first_seen": "2026-10-06T15:55:32"
   }
 }
