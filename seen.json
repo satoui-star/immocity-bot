@@ -3274,5 +3274,17 @@
     "score": 3.6,
     "commute": 35,
     "first_seen": "2026-10-08T09:44:02"
+  },
+  "citya:GES96890009-229": {
+    "source": "citya",
+    "ref": "GES96890009-229",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-19e-arrondissement-75019/GES96890009-229",
+    "price": 769,
+    "surface": 21,
+    "rooms": null,
+    "location": "75019",
+    "score": 0.2,
+    "commute": 38,
+    "first_seen": "2026-10-08T16:58:12"
   }
 }
