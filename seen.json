@@ -3250,5 +3250,29 @@
     "score": 1.2,
     "commute": 30,
     "first_seen": "2026-10-06T15:55:32"
+  },
+  "foncia:331710907": {
+    "source": "foncia",
+    "ref": "331710907",
+    "url": "https://fr.foncia.com/location/montrouge-92120/appartement/331710907.htm",
+    "price": 821,
+    "surface": 29,
+    "rooms": "1 pièces",
+    "location": "92120",
+    "score": 2.2,
+    "commute": 35,
+    "first_seen": "2026-10-08T09:44:01"
+  },
+  "foncia:331674754": {
+    "source": "foncia",
+    "ref": "331674754",
+    "url": "https://fr.foncia.com/location/issy-les-moulineaux-92130/appartement/331674754.htm",
+    "price": 536,
+    "surface": 20,
+    "rooms": "1 pièces",
+    "location": "92130",
+    "score": 3.6,
+    "commute": 35,
+    "first_seen": "2026-10-08T09:44:02"
   }
 }
