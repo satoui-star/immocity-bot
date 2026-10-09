@@ -3286,5 +3286,29 @@
     "score": 0.2,
     "commute": 38,
     "first_seen": "2026-10-08T16:58:12"
+  },
+  "foncia:331699082": {
+    "source": "foncia",
+    "ref": "331699082",
+    "url": "https://fr.foncia.com/location/paris-75014/appartement/331699082.htm",
+    "price": 995,
+    "surface": 29,
+    "rooms": "2 pièces",
+    "location": "75014",
+    "score": 2.7,
+    "commute": 30,
+    "first_seen": "2026-10-09T14:42:01"
+  },
+  "citya:GES23530031-609": {
+    "source": "citya",
+    "ref": "GES23530031-609",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-11e-arrondissement-75011/GES23530031-609",
+    "price": 814,
+    "surface": 20,
+    "rooms": "1 pièces",
+    "location": "75011",
+    "score": 2.8,
+    "commute": 19,
+    "first_seen": "2026-10-09T14:42:02"
   }
 }
