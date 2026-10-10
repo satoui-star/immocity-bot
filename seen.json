@@ -3322,5 +3322,17 @@
     "score": 4.2,
     "commute": 6,
     "first_seen": "2026-10-09T19:46:19"
+  },
+  "citya:GES70990017-846": {
+    "source": "citya",
+    "ref": "GES70990017-846",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-16e-arrondissement-75016/GES70990017-846",
+    "price": 762,
+    "surface": 20,
+    "rooms": "1 pièces",
+    "location": "75016",
+    "score": 2.5,
+    "commute": 45,
+    "first_seen": "2026-10-10T15:21:12"
   }
 }
