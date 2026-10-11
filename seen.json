@@ -3334,5 +3334,17 @@
     "score": 2.5,
     "commute": 45,
     "first_seen": "2026-10-10T15:21:12"
+  },
+  "foncia:331682639": {
+    "source": "foncia",
+    "ref": "331682639",
+    "url": "https://fr.foncia.com/location/clichy-92110/appartement/331682639.htm",
+    "price": 961,
+    "surface": 38,
+    "rooms": "2 pièces",
+    "location": "92110",
+    "score": 2.4,
+    "commute": 42,
+    "first_seen": "2026-10-11T19:05:11"
   }
 }
