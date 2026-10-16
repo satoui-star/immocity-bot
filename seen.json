@@ -3370,5 +3370,41 @@
     "score": 0.6,
     "commute": 35,
     "first_seen": "2026-10-15T09:25:03"
+  },
+  "foncia:331714686": {
+    "source": "foncia",
+    "ref": "331714686",
+    "url": "https://fr.foncia.com/location/paris-75009/appartement-meuble/331714686.htm",
+    "price": 975,
+    "surface": 21,
+    "rooms": "1 pièces",
+    "location": "75009",
+    "score": 1.2,
+    "commute": 33,
+    "first_seen": "2026-10-16T12:23:10"
+  },
+  "foncia:331699788": {
+    "source": "foncia",
+    "ref": "331699788",
+    "url": "https://fr.foncia.com/location/paris-75013/appartement/331699788.htm",
+    "price": 886,
+    "surface": 28,
+    "rooms": "1 pièces",
+    "location": "75013",
+    "score": 4.0,
+    "commute": 24,
+    "first_seen": "2026-10-16T12:23:11"
+  },
+  "foncia:331723633": {
+    "source": "foncia",
+    "ref": "331723633",
+    "url": "https://fr.foncia.com/location/montreuil-93100/appartement/331723633.htm",
+    "price": 940,
+    "surface": 41,
+    "rooms": "2 pièces",
+    "location": "93100",
+    "score": 3.6,
+    "commute": 28,
+    "first_seen": "2026-10-16T12:23:12"
   }
 }
