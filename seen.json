@@ -3406,5 +3406,17 @@
     "score": 3.6,
     "commute": 28,
     "first_seen": "2026-10-16T12:23:12"
+  },
+  "foncia:331718713": {
+    "source": "foncia",
+    "ref": "331718713",
+    "url": "https://fr.foncia.com/location/paris-75013/appartement-meuble/331718713.htm",
+    "price": 960,
+    "surface": 20,
+    "rooms": "1 pièces",
+    "location": "75013",
+    "score": 2.0,
+    "commute": 24,
+    "first_seen": "2026-10-16T16:50:37"
   }
 }
