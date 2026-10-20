@@ -3442,5 +3442,53 @@
     "score": 3.0,
     "commute": 28,
     "first_seen": "2026-10-19T13:04:27"
+  },
+  "foncia:331716833": {
+    "source": "foncia",
+    "ref": "331716833",
+    "url": "https://fr.foncia.com/location/issy-les-moulineaux-92130/appartement/331716833.htm",
+    "price": 950,
+    "surface": 31,
+    "rooms": "2 pièces",
+    "location": "92130",
+    "score": 2.2,
+    "commute": 35,
+    "first_seen": "2026-10-20T16:58:49"
+  },
+  "foncia:331719016": {
+    "source": "foncia",
+    "ref": "331719016",
+    "url": "https://fr.foncia.com/location/vanves-92170/appartement-meuble/331719016.htm",
+    "price": 844,
+    "surface": 25,
+    "rooms": "1 pièces",
+    "location": "92170",
+    "score": 0.6,
+    "commute": 35,
+    "first_seen": "2026-10-20T16:58:50"
+  },
+  "citya:GES01740005-478": {
+    "source": "citya",
+    "ref": "GES01740005-478",
+    "url": "https://www.citya.com/annonces/location/appartement/maisons-alfort-94700/GES01740005-478",
+    "price": 984,
+    "surface": 37,
+    "rooms": "2 pièces",
+    "location": "94700",
+    "score": 4.5,
+    "commute": 4,
+    "first_seen": "2026-10-20T16:58:51"
+  },
+  "flatbay:2512": {
+    "source": "flatbay",
+    "ref": "2512",
+    "url": "https://altarea.flatbay.fr/fr/property/show/2512",
+    "price": 796,
+    "surface": 24,
+    "rooms": "2 pièces",
+    "location": "75019",
+    "score": 0.9,
+    "commute": 38,
+    "first_seen": "2026-10-20T16:58:52"
   }
 }
