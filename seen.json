@@ -3490,5 +3490,29 @@
     "score": 0.9,
     "commute": 38,
     "first_seen": "2026-10-20T16:58:52"
+  },
+  "foncia:331711649": {
+    "source": "foncia",
+    "ref": "331711649",
+    "url": "https://fr.foncia.com/location/paris-75016/appartement/331711649.htm",
+    "price": 840,
+    "surface": 22,
+    "rooms": "1 pièces",
+    "location": "75016",
+    "score": 2.5,
+    "commute": 45,
+    "first_seen": "2026-10-21T17:27:18"
+  },
+  "foncia:331720766": {
+    "source": "foncia",
+    "ref": "331720766",
+    "url": "https://fr.foncia.com/location/clichy-92110/appartement/331720766.htm",
+    "price": 763,
+    "surface": 33,
+    "rooms": "1 pièces",
+    "location": "92110",
+    "score": 3.3,
+    "commute": 42,
+    "first_seen": "2026-10-21T17:27:19"
   }
 }
