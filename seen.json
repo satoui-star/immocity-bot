@@ -3538,5 +3538,17 @@
     "score": 3.5,
     "commute": 30,
     "first_seen": "2026-10-24T08:24:58"
+  },
+  "foncia:331717415": {
+    "source": "foncia",
+    "ref": "331717415",
+    "url": "https://fr.foncia.com/location/vanves-92170/appartement/331717415.htm",
+    "price": 841,
+    "surface": 20,
+    "rooms": "1 pièces",
+    "location": "92170",
+    "score": 0.6,
+    "commute": 35,
+    "first_seen": "2026-10-26T12:53:32"
   }
 }
