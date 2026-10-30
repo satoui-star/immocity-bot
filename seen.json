@@ -3562,5 +3562,17 @@
     "score": 3.2,
     "commute": 19,
     "first_seen": "2026-10-26T18:57:20"
+  },
+  "foncia:331725326": {
+    "source": "foncia",
+    "ref": "331725326",
+    "url": "https://fr.foncia.com/location/paris-75020/appartement-meuble/331725326.htm",
+    "price": 776,
+    "surface": 21,
+    "rooms": "1 pièces",
+    "location": "75020",
+    "score": 1.2,
+    "commute": 30,
+    "first_seen": "2026-10-30T00:56:23"
   }
 }
