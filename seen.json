@@ -3598,5 +3598,17 @@
     "score": 4.3,
     "commute": 24,
     "first_seen": "2026-11-02T18:37:42"
+  },
+  "flatbay:1727": {
+    "source": "flatbay",
+    "ref": "1727",
+    "url": "https://altarea.flatbay.fr/fr/property/show/1727",
+    "price": 925,
+    "surface": 27,
+    "rooms": "2 pièces",
+    "location": "75009",
+    "score": 4.4,
+    "commute": 33,
+    "first_seen": "2026-11-03T15:38:37"
   }
 }
