@@ -3622,5 +3622,41 @@
     "score": 2.0,
     "commute": 35,
     "first_seen": "2026-11-03T21:16:07"
+  },
+  "foncia:331723026": {
+    "source": "foncia",
+    "ref": "331723026",
+    "url": "https://fr.foncia.com/location/montrouge-92120/appartement/331723026.htm",
+    "price": 927,
+    "surface": 35,
+    "rooms": "2 pièces",
+    "location": "92120",
+    "score": 2.9,
+    "commute": 35,
+    "first_seen": "2026-11-04T15:46:17"
+  },
+  "foncia:331712090": {
+    "source": "foncia",
+    "ref": "331712090",
+    "url": "https://fr.foncia.com/location/issy-les-moulineaux-92130/appartement/331712090.htm",
+    "price": 990,
+    "surface": 33,
+    "rooms": "1 pièces",
+    "location": "92130",
+    "score": 2.4,
+    "commute": 35,
+    "first_seen": "2026-11-04T15:46:18"
+  },
+  "citya:GES55510142-156": {
+    "source": "citya",
+    "ref": "GES55510142-156",
+    "url": "https://www.citya.com/annonces/location/appartement/paris-15e-arrondissement-75015/GES55510142-156",
+    "price": 885,
+    "surface": 22,
+    "rooms": "1 pièces",
+    "location": "75015",
+    "score": 1.5,
+    "commute": 28,
+    "first_seen": "2026-11-04T15:46:19"
   }
 }
