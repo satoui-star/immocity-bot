@@ -3658,5 +3658,17 @@
     "score": 1.5,
     "commute": 28,
     "first_seen": "2026-11-04T15:46:19"
+  },
+  "foncia:29969-661": {
+    "source": "foncia",
+    "ref": "29969-661",
+    "url": "https://fr.foncia.com/location/paris-75013/appartement/29969-661.htm",
+    "price": 890,
+    "surface": 26,
+    "rooms": "1 pièces",
+    "location": "75013",
+    "score": 3.1,
+    "commute": 24,
+    "first_seen": "2026-11-05T08:43:48"
   }
 }
