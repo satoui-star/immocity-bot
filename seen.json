@@ -3730,5 +3730,29 @@
     "score": 5.2,
     "commute": 38,
     "first_seen": "2026-11-10T11:45:57"
+  },
+  "foncia:331722546": {
+    "source": "foncia",
+    "ref": "331722546",
+    "url": "https://fr.foncia.com/location/paris-75020/appartement/331722546.htm",
+    "price": 851,
+    "surface": 25,
+    "rooms": "1 pièces",
+    "location": "75020",
+    "score": 1.6,
+    "commute": 30,
+    "first_seen": "2026-11-10T18:51:22"
+  },
+  "foncia:331719957": {
+    "source": "foncia",
+    "ref": "331719957",
+    "url": "https://fr.foncia.com/location/levallois-perret-92300/appartement/331719957.htm",
+    "price": 923,
+    "surface": 24,
+    "rooms": "1 pièces",
+    "location": "92300",
+    "score": 0.0,
+    "commute": 43,
+    "first_seen": "2026-11-10T18:51:23"
   }
 }
