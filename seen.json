@@ -3862,5 +3862,41 @@
     "score": 1.6,
     "commute": 35,
     "first_seen": "2026-11-17T12:12:55"
+  },
+  "foncia:331729400": {
+    "source": "foncia",
+    "ref": "331729400",
+    "url": "https://fr.foncia.com/location/paris-75019/appartement-meuble/331729400.htm",
+    "price": 848,
+    "surface": 20,
+    "rooms": "1 pièces",
+    "location": "75019",
+    "score": 0.2,
+    "commute": 38,
+    "first_seen": "2026-11-17T20:52:59"
+  },
+  "foncia:331726360": {
+    "source": "foncia",
+    "ref": "331726360",
+    "url": "https://fr.foncia.com/location/issy-les-moulineaux-92130/appartement/331726360.htm",
+    "price": 890,
+    "surface": 28,
+    "rooms": "1 pièces",
+    "location": "92130",
+    "score": 1.8,
+    "commute": 35,
+    "first_seen": "2026-11-17T20:53:00"
+  },
+  "foncia:331730360": {
+    "source": "foncia",
+    "ref": "331730360",
+    "url": "https://fr.foncia.com/location/montreuil-93100/appartement-meuble/331730360.htm",
+    "price": 796,
+    "surface": 31,
+    "rooms": "2 pièces",
+    "location": "93100",
+    "score": 2.3,
+    "commute": 28,
+    "first_seen": "2026-11-17T20:53:01"
   }
 }
